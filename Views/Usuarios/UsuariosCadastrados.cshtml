@@ -1,0 +1,227 @@
+﻿@model IEnumerable<Conectasys.Portal.Models.UsuarioInfo>
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+@using Newtonsoft.Json;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8 , user-scalable=no" />
+    <title>Usuários</title>
+    <link rel="stylesheet" href="~/css/DataTable.css"/>
+    <link rel="stylesheet" href="~/css/Cadastros.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Usuários
+            </div>
+        </div>
+
+        <form action="pesquisar" method="post" onsubmit="Submit()">
+            <div class="barra-pesquisa-container">
+                <div class="barra-pesquisa-content">
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Matrícula
+                            </div>
+                            <div class="input-content">
+                                <input type="text" name="matricula" class="input" value="@ViewBag.Matricula" autofocus autocomplete="off"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Nome
+                            </div>
+                            <div class="input-content">
+                                <input type="text" name="nome" class="input" value="@ViewBag.Nome" autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Permissão
+                            </div>
+                            <div class="input-content">
+                                <select name="permissao" class="input" autofocus >
+                                    @if(ViewBag.Permissao == 2){
+                                        <option value="2" selected >Todos</option>
+                                        <option value="0" >Autorizado</option>
+                                        <option value="1" >Não Autorizado</option>
+                                    }
+                                    else if (ViewBag.Permissao == 0)
+                                    {
+                                        <option value="2">Todos</option>
+                                        <option value="0" selected>Autorizado</option>
+                                        <option value="1">Não Autorizado</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="2">Todos</option>
+                                        <option value="0">Autorizado</option>
+                                        <option value="1" selected>Não Autorizado</option>
+                                    }                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-pesquisar-container">
+                    <input type="submit" class="button-pesquisar" value="Pesquisar" />
+                </div>
+            </div>
+        </form>
+
+        <div class="button-filtros-container">
+            <input class="button-filtros" type="button" value="Expandir" />
+        </div>
+
+        <div class="button-funcoes-container">
+            <button class="button-exportar">Exportar</button>
+            <input type="button" value="Novo" class="button-novo" onclick="location.href='@Url.Action("Novo", "Usuarios", new { matricula = ViewBag.Matricula, permissao = ViewBag.Permissao, nome = ViewBag.Nome })'" />
+        </div>
+
+        <div class="table-container">
+            <div class="table-content">
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left;">Matrícula</th>
+                            <th style="text-align:left;">Nome</th>
+                            <th style="width:300px;"></th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td data-label="Matricula">
+                                    <div class="flex-td">
+                                        @item.Matricula
+                                    </div>
+                                </td>
+                                <td data-label="Nome">
+                                    <div class="flex-td">
+                                        @item.Nome
+                                    </div>
+                                </td>
+                                <td class="noExl">
+
+                                    <div class="table-buttons-container">
+                                        <div class="table-buttons-content">
+                                            <input type="button" value="Editar" class="table-button-update" onclick="location.href='@Url.Action("Editar", "Usuarios", new { matricula = item.Matricula, matriculaPesquisada = ViewBag.Matricula, permissaoPesquisada = ViewBag.Permissao, NomePesquisado = ViewBag.Nome })'" />
+                                        </div>
+                                        <div class="table-buttons-content">
+                                            @using (Html.BeginForm("deletar", "Usuarios", new { matricula = item.Matricula, matriculaPesquisada = ViewBag.Matricula, permissaoPesquisada = ViewBag.Permissao, nomePesquisado = ViewBag.Nome }, FormMethod.Post))
+                                            {                                               
+                                                <button class="table-button-delete">Deletar</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/jquery.table2excel.js"></script>
+
+     <script>
+
+        @{
+            var erro = Json.Serialize(ViewBag.Erro);
+        }
+
+        switch (@erro)
+        {
+            case 1:
+                alert("Erro no cadastro, tente novamente!");
+                break;
+
+            case 2:
+                alert("Erro na atualização, tente novamente!");
+                break;
+
+            case 3:
+                alert("Erro no delete, tente novamente!");
+                break;
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var table = $('#table').DataTable();
+            var month = new Date().getMonth() + 1;
+
+            $(".button-filtros").on("click", function () {
+                if ($(".barra-pesquisa-container").css("visibility") == "hidden") {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".table-container").css("height", "calc(100% - 446px)");
+                    $(".button-filtros").val("Reduzir");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                    $(".button-filtros").val("Expandir");
+                }
+            });
+
+            window.addEventListener('resize', function (event) {
+                if ($(window).width() > 1375) {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".button-filtros-container").css("opacity", "0");
+                    $(".button-filtros-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 230px)");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".button-filtros-container").css("opacity", "1");
+                    $(".button-filtros-container").css("height", "36px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                }
+            });
+
+            $('.button-exportar').on('click', function () {
+                $('<table>').append($(table.table().header()).clone()).append(table.$('tr').clone()).table2excel({
+                    exclude: ".noExl",
+                    name: "Usuarios",
+                    filename: "Usuarios" + "/" + new Date().getDate() + "/" + month + "/" + new Date().getFullYear(),
+                    fileext: ".xls",
+                    exclude_img: true,
+                    exclude_links: true,
+                    exclude_inputs: true
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+

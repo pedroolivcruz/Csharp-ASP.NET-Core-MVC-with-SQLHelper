@@ -1,0 +1,151 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <title>Novo</title>
+    <link rel="stylesheet" href="~/css/NovoCadastro.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Novo Componente
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "Componentes", new { p =  ViewBag.Posto, m = ViewBag.Modelo })'" />
+            </div>
+        </div>
+        
+        <div class="cadastro-container">
+            <form action="cadastrar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+
+                <input name="postoPesquisa" value="@ViewBag.Posto" style="visibility:hidden;">
+                <input name="modeloPesquisa" value="@ViewBag.Modelo" style="visibility:hidden;">
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Código SAP
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="codigoSAP" type="text" class="parametro" autofocus required autocomplete="off" placeholder="Insira o código sap aqui!" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Tipo Componente
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="tipoMaterial" class="parametro" required autocomplete="off">
+                            <option>Anel</option>
+                            <option>Bucha</option>
+                            <option>Chicote</option>
+                            <option>Cilindro</option>
+                            <option>Esfera</option>
+                            <option>Estrutura</option>
+                            <option>Parafuso</option>
+                            <option>Sensor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Modelo
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="modelo" type="number" min="1" class="parametro" value="1" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Descricao
+                    </div>
+                    <div class="row-parametro-container">
+                        <textarea name="descricao" class="parametro" required autautocomplete="off" placeholder="Insira a descrição aqui!"></textarea>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Posto
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="posto" class="parametro" required autocomplete="off">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Sequência
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="sequencia" type="number" min="0" class="parametro" value="0" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Ativo
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="ativo" class="parametro" required autocomplete="off">
+                            <option value="true">Sim</option>
+                            <option value="false">Não</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" class="button-salvar" value="Salvar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        const txHeight = 16;
+        const tx = document.getElementsByTagName("textarea");
+
+        for (let i = 0; i < tx.length; i++) {
+            if (tx[i].value == '') {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+            }
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput(e) {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        }
+    </script>
+}

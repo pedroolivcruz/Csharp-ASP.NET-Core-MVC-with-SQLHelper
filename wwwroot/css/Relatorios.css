@@ -1,0 +1,566 @@
+﻿/* CABEÇALHO */
+.header-container {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to right,rgb(8,28,108), rgb(28,58,138));
+    background-image: -moz-linear-gradient(to right,rgb(8,28,108), rgb(28,58,138));
+    background-image: -webkit-linear-gradient(to right,rgb(8,28,108), rgb(28,58,138));
+    align-items: center;
+    z-index: 10;
+}
+
+.header-content {
+    height: 100%;
+    width: calc(100% - 245px);
+    margin-left: 85px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.button-header-container {
+    height: 100%;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.button-header {
+    height: 36px;
+    width: 100px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+    .button-header:hover {
+        background-color: #FFC82A;
+    }
+
+.button-pdf {
+    width: 200px;
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+    background-color: orange;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    position: fixed;
+    left: calc((100vw - 200px)/2);
+}
+
+    .button-pdf:hover {
+        background-color: #FFC82A;
+    }
+
+.barra-pesquisa-container {
+    height: 90px;
+    background-color:ghostwhite;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* VISUALIZAR DE RELATÓRIO */
+.relatorio-container {
+    width: 100%;
+    height:calc(100% - 180px);
+    position: fixed;
+    top: 180px;
+    left: 0px;
+    align-items: center;
+    z-index: 1;
+    background-color: ghostwhite;
+    overflow: auto;
+}
+
+.relatorio-page {
+    display: block;
+    margin-left: calc((100vw - 210mm)/2);
+    height: 293mm;
+    width: 210mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    padding-top: 12mm;
+    padding-bottom: 12mm;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.relatorio-page:last-child{
+    margin-bottom:30px;
+}
+
+.relatorio-page-content {
+    height: 273mm;
+    display: block;
+    width: 190mm;
+    background-color: white;
+    page-break-after:always;
+}
+
+.relatorio-page-header-container {
+    display: flex;
+    height: 80px;
+    width: 190mm;
+}
+
+.relatorio-page-logo{
+    display:flex;
+    height:100%;
+    width:150px;
+    object-fit:scale-down;
+
+}
+
+.relatorio-page-header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:calc(100% - 150px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+}
+
+/*--------------------------------------------------------------------*/
+
+.page-row-tipo-estrutura {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left:10px;
+    height: 50px;
+    width: 190mm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.page-row-rastreabilidade {
+    display: flex;
+    height: 50px;
+    margin-top: 5px;
+    width: 190mm;
+    border-bottom: 1px black solid;
+}
+
+.page-row-sub-title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5px;
+    width: 190mm;
+    border-bottom: 1px black solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+.report-title {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.report-legend {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.report-legend-circle {
+    display:inline-block;
+    height: 100%;
+    width: 5.2mm;
+    border-radius:3mm;
+}
+
+.report-legend-square {
+    display: inline-block;
+    height: 100%;
+    width: 6mm;
+    border-radius: 0;
+    margin-left: 6.2mm;
+}
+
+.report-legend-text-container {
+    display: inline-block;
+    height: 100%;
+    align-items: center;
+    width: 30mm;
+}
+
+.report-legend-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    vertical-align: central;
+    padding-left: 1mm;
+    height: 20px;
+    width: 100%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+table {
+    width: 190mm;
+    border-collapse: collapse;
+}
+
+.table td {
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+.table th {
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    background-color: white;   
+}
+
+.table tbody tr {
+    background-color: white;
+    
+}
+
+    .table thead {
+        width: 190mm;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: black;
+    }
+
+.table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.page-row-foto-estrutura-container {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    padding:10px;
+    align-items: center;
+    width: 190mm;
+    object-fit: scale-down;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.page-row-info-posto {
+    display: flex;
+    height: 220px;
+    width: 190mm;
+    margin-top: 5px;
+    padding-bottom:5px;
+}
+
+.page-row-dados-posto {
+    position:relative;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 450px;
+}
+
+.page-row-foto-posto {
+    display: inline-block;
+    padding-right: 10px;
+    align-items: center;
+    object-position:right;
+    width: calc(100% - 451px);
+    object-fit: scale-down;
+}
+
+.title-posto {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 450px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.page-row-foto-descritiva {
+    display: flex;
+    height: 580px;
+    width: 100%;
+    object-fit:scale-down;
+    object-position:center;
+    border-bottom: 1px black solid;
+}
+
+
+
+.page-row-cordao {
+    display: block;
+    height: 210px;
+    width: 190mm;
+    border-bottom: 1px black solid;
+}
+
+.page-row-info-cordao {
+    display: flex;
+    height: 100%;
+    width: 190mm;
+}
+
+.page-row-dados-cordao {
+    display: inline-block;
+    height: 210px;
+    width: 60mm;
+    margin-right:10px;
+}
+
+.page-row-foto-cordao {
+    display: inline-block;
+    width: calc(100% - 451px);
+    height: 100%;
+}
+
+.row-foto-cordao {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    padding-left: 10px;
+    object-fit: scale-down;
+}
+
+.dados-cordao-container {
+    display: flex;
+    align-items:center;
+    height: 50px;
+    width: 60mm;
+}
+
+.title-cordao {
+    display: inline-block;
+    height: 50px;
+    width: 30mm;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.eps-cordao {
+    display: inline-block;
+    align-items: center;
+    height: 50px;
+    width: 30mm;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.page-row-grafico-cordao-container {
+    display: inline-block;
+    height: 195px;
+    margin-bottom:10px;
+    margin-right:10px;
+    width: calc(65mm - 10px);
+}
+
+.grafico-cordao-y-axis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.grafico-cordao-eps {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.grafico-cordao-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.grafico-teste-final-container{
+    display: flex;
+    height: 280px;
+    width: 100%;
+}
+
+.grafico-teste-final-content{
+    display: flex;
+    height: 280px;
+    width: 190mm;
+}
+
+
+.resultado-teste-final {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5px;
+    padding-left:10px;
+    width: 190mm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.page-row-descricao {
+    display: flex;
+    height: 220px;
+    width: 190mm;
+    align-items:center;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.title-descricao {
+    display:flex;
+    height: 100%;
+    width: 27mm;
+    background-color: white;
+    padding-left: 10px;
+    padding-top:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    font-weight:700;
+}
+
+.descricao {
+    display:flex;
+    height: 100%;
+    width: 163mm;
+    background-color: white;
+    padding-top:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+    textarea:focus {
+        outline: none;
+        border: none;
+        resize: none;
+    }
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+@page {
+    width: 190mm;
+    height: 277mm;
+    margin: 10mm 10mm 10mm 10mm;
+}
+
+/* RESPOSIVIDADE */
+@media(max-width:810px) {
+    .header-content {
+        font-size: 25px;
+    }
+
+    .relatorio-container::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+
+    .relatorio-page {
+        transform: scale(0.55);
+        margin-bottom:0px;
+        margin-top:calc(0px - 470px);
+    }
+
+    .relatorio-container {
+        padding-top: 255px;
+    }
+
+    .grafico-cordao-y-axis {
+        font-size: 10px;
+    }
+
+    .grafico-cordao-title{
+        font-size:14px;
+    }
+
+    .grafico-cordao-eps {
+        font-size: 10px;
+    }
+
+}
+

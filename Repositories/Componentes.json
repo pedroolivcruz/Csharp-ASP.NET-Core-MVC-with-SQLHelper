@@ -1,0 +1,52 @@
+[
+  {
+    "IdComponente": 1,
+    "TipoMaterial": "Anel",
+    "Descricao": "Anel 1",
+    "CodigoSAP": "10",
+    "Posto": 1,
+    "Sequencia": 0,
+    "Ativo": true,
+    "Modelo": 1
+  },
+  {
+    "IdComponente": 2,
+    "TipoMaterial": "Parafuso",
+    "Descricao": "Parafuso 1",
+    "CodigoSAP": "20",
+    "Posto": 1,
+    "Sequencia": 0,
+    "Ativo": true,
+    "Modelo": 1
+  },
+  {
+    "IdComponente": 3,
+    "TipoMaterial": "Esfera",
+    "Descricao": "Esfera 1",
+    "CodigoSAP": "30",
+    "Posto": 1,
+    "Sequencia": 0,
+    "Ativo": true,
+    "Modelo": 1
+  },
+  {
+    "IdComponente": 4,
+    "TipoMaterial": "Cilindro",
+    "Descricao": "Cilindro 1",
+    "CodigoSAP": "40",
+    "Posto": 1,
+    "Sequencia": 0,
+    "Ativo": true,
+    "Modelo": 1
+  },
+  {
+    "IdComponente": 5,
+    "TipoMaterial": "Chicote",
+    "Descricao": "Chicote 1",
+    "CodigoSAP": "50",
+    "Posto": 2,
+    "Sequencia": 0,
+    "Ativo": true,
+    "Modelo": 1
+  }
+]

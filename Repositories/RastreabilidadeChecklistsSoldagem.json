@@ -1,0 +1,233 @@
+[
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Ler etiqueta de programação(Logística)",
+    "Sequencia": 1,
+    "Data": "2022-08-17T08:46:04.780"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Gerar código rastreabilidade",
+    "Sequencia": 2,
+    "Data": "2022-08-17T08:46:08.817"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Posicionar o conj. placa dianteira inferior usinada no dispositivo",
+    "Sequencia": 3,
+    "Data": "2022-08-17T08:47:15.300"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Posicionar a placa dianteira lateral e reforço central",
+    "Sequencia": 4,
+    "Data": "2022-08-17T08:47:15.833"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Pontear no lado interno da placa dianteira lateral (2x) e lado externo (1x)",
+    "Sequencia": 5,
+    "Data": "2022-08-17T08:47:16.240"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Soldar cordões laterais",
+    "Sequencia": 6,
+    "Data": "2022-08-17T08:47:16.723"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Inserir rala de sacrifício",
+    "Sequencia": 7,
+    "Data": "2022-08-17T08:47:17.303"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Montar a pele superior no dispositivo",
+    "Sequencia": 8,
+    "Data": "2022-08-17T08:47:17.757"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Pontear a pele superior",
+    "Sequencia": 9,
+    "Data": "2022-08-17T08:47:18.383"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Pontear calços(5x)",
+    "Sequencia": 10,
+    "Data": "2022-08-17T08:47:18.807"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Marcar rastreabilidade",
+    "Sequencia": 11,
+    "Data": "2022-08-17T08:47:19.290"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 1,
+    "Descricao": "Fim de processo",
+    "Sequencia": 12,
+    "Data": "2022-08-17T08:47:19.747"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Ler rastreabilidade(QR-Code)",
+    "Sequencia": 1,
+    "Data": "2022-08-17T13:06:20.753"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Posicionar e fixar estrutura dianteira no dispositivo etodos os grampos",
+    "Sequencia": 2,
+    "Data": "2022-08-17T14:46:27.140"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Posicionar buchas(2x),fixá-las e pontear extremidades(8x)",
+    "Sequencia": 3,
+    "Data": "2022-08-17T14:46:27.673"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Iniciar solda robotizada(Etapa 01)",
+    "Sequencia": 5,
+    "Data": "2022-08-17T14:46:28.313"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Bater cascas e inverter os grampos",
+    "Sequencia": 6,
+    "Data": "2022-08-17T14:46:29.157"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Pontear braços(4x)",
+    "Sequencia": 7,
+    "Data": "2022-08-17T14:46:29.780"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Iniciar solda robotizada(Etapa 02)",
+    "Sequencia": 8,
+    "Data": "2022-08-17T14:46:30.750"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Bater cascas e inverter os grampos",
+    "Sequencia": 9,
+    "Data": "2022-08-17T14:46:33.157"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Iniciar solda robotizada(Etapa 03)",
+    "Sequencia": 10,
+    "Data": "2022-08-17T15:54:09.383"
+  },
+  {
+    "Codigo": "F22330012",
+    "Posto": 5,
+    "Descricao": "Fim de processo",
+    "Sequencia": 11,
+    "Data": "2022-08-17T15:54:10.513"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Fim de processo",
+    "Sequencia": 12,
+    "Data": "2022-09-06T11:55:12.273"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Gerar código rastreabilidade",
+    "Sequencia": 2,
+    "Data": "2022-09-06T10:36:17.263"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Inserir rala de sacrifício",
+    "Sequencia": 7,
+    "Data": "2022-09-06T11:55:09.227"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Ler etiqueta de programação(Logística)",
+    "Sequencia": 1,
+    "Data": "2022-09-06T10:36:13.200"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Montar a pele superior no dispositivo",
+    "Sequencia": 8,
+    "Data": "2022-09-06T11:55:09.697"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Pontear a pele superior",
+    "Sequencia": 10,
+    "Data": "2022-09-06T11:55:10.320"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Pontear calços(5x)",
+    "Sequencia": 11,
+    "Data": "2022-09-06T11:55:11.273"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Pontear no lado interno da placa dianteira lateral (2x) e lado externo (1x)",
+    "Sequencia": 5,
+    "Data": "2022-09-06T11:55:08.260"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Posicionar a placa dianteira lateral e reforço central",
+    "Sequencia": 4,
+    "Data": "2022-09-06T11:55:07.633"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Posicionar o conj. placa dianteira inferior usinada no dispositivo",
+    "Sequencia": 3,
+    "Data": "2022-09-06T11:55:07.150"
+  },
+  {
+    "Codigo": "F22360039",
+    "Posto": 1,
+    "Descricao": "Soldar cordões laterais",
+    "Sequencia": 6,
+    "Data": "2022-09-06T11:55:08.760"
+  }
+]

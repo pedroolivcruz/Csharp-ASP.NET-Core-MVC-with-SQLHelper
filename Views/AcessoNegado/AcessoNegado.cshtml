@@ -1,0 +1,63 @@
+﻿@using Conectasys.Portal
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no" />
+    <link rel="shortcut icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/AcessoNegado.css" />
+    <link rel="stylesheet" href="~/css/Aviso.css" />
+    <link rel="stylesheet" href="~/css/Loader.css"/>
+    <title>Acesso Negado</title>
+</head>
+<body>
+
+    @if (Config.IsDemostration)
+    {
+        <div class="aviso">
+            <div class="aviso-flex">
+                Está é uma versão de demonstração, não representa o funcionamento final deste portal
+            </div>
+        </div>
+    }
+
+    <div class="page-container">
+        <div class="page-content">
+            <div class="row-container">
+                <div class="row-content">
+                    ACESSO NEGADO
+                </div>
+            </div>
+            <div class="row-button-container">
+                <div class="row-button-content">
+                    <input type="button" value="Voltar ao menu" class="button" onclick="location.href='@Url.Action("voltar", "AcessoNegado")'" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function () {
+        $(".button").on("click", function () {
+            $(".center").css("visibility", "visible");
+        });
+    });
+</script>
+
+
+
+

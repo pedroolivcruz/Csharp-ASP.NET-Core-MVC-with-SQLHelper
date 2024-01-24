@@ -1,0 +1,122 @@
+[
+  {
+    "Rastreabilidade": "B2231000901",
+    "Posto": 1,
+    "DataInicio": "2022-08-02T11:07:10.150",
+    "DataFim": "2022-08-02T11:11:26.840",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231000901",
+    "Posto": 2,
+    "DataInicio": "2022-08-02T13:30:46.093",
+    "DataFim": "2022-08-02T16:14:23.173",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231000901",
+    "Posto": 3,
+    "DataInicio": "2022-08-02T11:14:06.380",
+    "DataFim": "2022-08-02T11:41:57.483",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231000901",
+    "Posto": 4,
+    "DataInicio": "2022-08-02T14:49:26.147",
+    "DataFim": "2022-08-02T14:56:31.987",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231000901",
+    "Posto": 5,
+    "DataInicio": "2022-09-02T14:17:27.923",
+    "DataFim": "2022-09-02T14:20:40.330",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001304",
+    "Posto": 1,
+    "DataInicio": "2022-08-03T08:40:30.503",
+    "DataFim": "2022-08-03T08:47:30.963",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001304",
+    "Posto": 2,
+    "DataInicio": "2022-08-03T11:48:58.783",
+    "DataFim": "2022-08-03T14:42:04.747",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001304",
+    "Posto": 3,
+    "DataInicio": "2022-08-03T11:08:31.273",
+    "DataFim": "2022-08-03T11:17:55.567",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001304",
+    "Posto": 4,
+    "DataInicio": "2022-08-03T12:47:37.997",
+    "DataFim": "2022-08-03T12:59:06.967",
+    "Status": 3,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001304",
+    "Posto": 5,
+    "DataInicio": "2022-09-02T14:21:07.943",
+    "DataFim": "2022-09-02T14:33:48.233",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001401",
+    "Posto": 1,
+    "DataInicio": "2022-08-03T14:29:31.463",
+    "DataFim": "2022-08-03T14:41:21.693",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001401",
+    "Posto": 2,
+    "DataInicio": "2022-08-03T16:07:43.520",
+    "DataFim": "2022-08-03T16:55:17.083",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001401",
+    "Posto": 3,
+    "DataInicio": "2022-08-03T15:11:03.763",
+    "DataFim": "2022-08-03T15:26:59.363",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001401",
+    "Posto": 4,
+    "DataInicio": "2022-08-04T07:33:20.500",
+    "DataFim": "2022-08-04T07:45:19.370",
+    "Status": 2,
+    "Operador": "Wagner"
+  },
+  {
+    "Rastreabilidade": "B2231001401",
+    "Posto": 5,
+    "DataInicio": "2022-08-04T15:39:20.240",
+    "DataFim": "2022-08-04T15:54:12.617",
+    "Status": 2,
+    "Operador": "Wagner"
+  }
+]

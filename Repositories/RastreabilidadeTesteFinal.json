@@ -1,0 +1,4016 @@
+[
+  {
+    "IdTesteFinal": 301,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:42.580",
+    "Forca": 3.800000000000000e+000,
+    "Angulo": -4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 302,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:42.707",
+    "Forca": 7.500000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 303,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:42.830",
+    "Forca": 7.600000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 304,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:42.957",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": -4.700000000000000e+001,
+    "Velocidade": 8.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 305,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.080",
+    "Forca": 3.600000000000000e+000,
+    "Angulo": -4.500000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 306,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.203",
+    "Forca": 4.900000000000000e+000,
+    "Angulo": -4.300000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 307,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.330",
+    "Forca": 1.560000000000000e+001,
+    "Angulo": -4.100000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 308,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.453",
+    "Forca": 2.070000000000000e+001,
+    "Angulo": -4.000000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 309,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.577",
+    "Forca": 2.290000000000000e+001,
+    "Angulo": -3.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 310,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.700",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -3.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 311,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.827",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -3.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 312,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:43.950",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -3.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 313,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.080",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 314,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.203",
+    "Forca": 2.380000000000000e+001,
+    "Angulo": -2.700000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 315,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.327",
+    "Forca": 2.450000000000000e+001,
+    "Angulo": -2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 316,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.453",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -2.300000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 317,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.577",
+    "Forca": 2.370000000000000e+001,
+    "Angulo": -2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 318,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.703",
+    "Forca": 2.320000000000000e+001,
+    "Angulo": -1.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 319,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.830",
+    "Forca": 2.340000000000000e+001,
+    "Angulo": -1.700000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 320,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:44.957",
+    "Forca": 2.320000000000000e+001,
+    "Angulo": -1.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 321,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.080",
+    "Forca": 2.170000000000000e+001,
+    "Angulo": -1.300000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 322,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.203",
+    "Forca": 2.180000000000000e+001,
+    "Angulo": -1.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 323,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.327",
+    "Forca": 2.070000000000000e+001,
+    "Angulo": -9.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 324,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.450",
+    "Forca": 1.970000000000000e+001,
+    "Angulo": -7.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 325,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.573",
+    "Forca": 1.930000000000000e+001,
+    "Angulo": -5.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 326,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.700",
+    "Forca": 1.890000000000000e+001,
+    "Angulo": -3.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 327,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.830",
+    "Forca": 1.750000000000000e+001,
+    "Angulo": -1.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 328,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:45.957",
+    "Forca": 1.630000000000000e+001,
+    "Angulo": 1.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 329,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.077",
+    "Forca": 1.620000000000000e+001,
+    "Angulo": 3.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 330,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.203",
+    "Forca": 1.520000000000000e+001,
+    "Angulo": 5.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 331,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.323",
+    "Forca": 1.450000000000000e+001,
+    "Angulo": 7.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 332,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.453",
+    "Forca": 1.360000000000000e+001,
+    "Angulo": 9.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 333,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.573",
+    "Forca": 1.340000000000000e+001,
+    "Angulo": 1.100000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 334,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.690",
+    "Forca": 1.250000000000000e+001,
+    "Angulo": 1.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 335,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.810",
+    "Forca": 1.160000000000000e+001,
+    "Angulo": 1.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 336,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:46.937",
+    "Forca": 1.280000000000000e+001,
+    "Angulo": 1.700000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 337,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.060",
+    "Forca": 1.160000000000000e+001,
+    "Angulo": 1.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 338,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.190",
+    "Forca": 1.060000000000000e+001,
+    "Angulo": 2.100000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 339,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.313",
+    "Forca": 9.800000000000001e+000,
+    "Angulo": 2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 340,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.437",
+    "Forca": 9.300000000000001e+000,
+    "Angulo": 2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 341,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.560",
+    "Forca": 1.010000000000000e+001,
+    "Angulo": 2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 342,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.683",
+    "Forca": 8.900000000000000e+000,
+    "Angulo": 2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 343,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.813",
+    "Forca": 9.500000000000000e+000,
+    "Angulo": 3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 344,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:47.940",
+    "Forca": 6.600000000000000e+000,
+    "Angulo": 3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 345,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.063",
+    "Forca": 7.800000000000000e+000,
+    "Angulo": 3.500000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 346,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.187",
+    "Forca": 6.600000000000000e+000,
+    "Angulo": 3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 347,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.313",
+    "Forca": 6.600000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 348,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.440",
+    "Forca": 8.300000000000001e+000,
+    "Angulo": 4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 349,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.563",
+    "Forca": 8.000000000000000e+000,
+    "Angulo": 4.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 350,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.683",
+    "Forca": 5.700000000000000e+000,
+    "Angulo": 4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 351,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.813",
+    "Forca": 9.100000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 352,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:48.940",
+    "Forca": 8.100000000000000e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 9.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 353,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.063",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 3.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 354,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.183",
+    "Forca": 5.800000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 1.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 355,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.297",
+    "Forca": 8.300000000000001e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 356,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.420",
+    "Forca": 8.600000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 357,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.550",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 358,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.670",
+    "Forca": 7.900000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 359,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:49.800",
+    "Forca": 7.600000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 360,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:54.950",
+    "Forca": 2.500000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 361,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.080",
+    "Forca": 3.800000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 362,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.207",
+    "Forca": 4.500000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 363,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.330",
+    "Forca": 3.300000000000000e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 6.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 364,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.457",
+    "Forca": 5.000000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 365,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.577",
+    "Forca": 4.000000000000000e+000,
+    "Angulo": 4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 366,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.700",
+    "Forca": 3.500000000000000e+000,
+    "Angulo": 4.300000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 367,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.827",
+    "Forca": 1.000000000000000e+000,
+    "Angulo": 4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 368,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:55.950",
+    "Forca": 7.000000000000000e-001,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 369,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.080",
+    "Forca": 1.400000000000000e+000,
+    "Angulo": 3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 370,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.203",
+    "Forca": 3.000000000000000e+000,
+    "Angulo": 3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 371,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.327",
+    "Forca": 7.800000000000000e+000,
+    "Angulo": 3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 372,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.450",
+    "Forca": 1.180000000000000e+001,
+    "Angulo": 3.100000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 373,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.573",
+    "Forca": 1.360000000000000e+001,
+    "Angulo": 2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 374,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.700",
+    "Forca": 1.440000000000000e+001,
+    "Angulo": 2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 375,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.830",
+    "Forca": 1.580000000000000e+001,
+    "Angulo": 2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 376,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:56.957",
+    "Forca": 1.470000000000000e+001,
+    "Angulo": 2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 377,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.077",
+    "Forca": 1.470000000000000e+001,
+    "Angulo": 2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 378,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.200",
+    "Forca": 1.550000000000000e+001,
+    "Angulo": 1.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 379,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.330",
+    "Forca": 1.590000000000000e+001,
+    "Angulo": 1.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 380,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.457",
+    "Forca": 1.740000000000000e+001,
+    "Angulo": 1.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 381,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.580",
+    "Forca": 1.860000000000000e+001,
+    "Angulo": 1.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 382,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.703",
+    "Forca": 1.870000000000000e+001,
+    "Angulo": 1.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 383,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.823",
+    "Forca": 1.820000000000000e+001,
+    "Angulo": 9.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 384,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:57.950",
+    "Forca": 1.790000000000000e+001,
+    "Angulo": 7.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 385,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.080",
+    "Forca": 1.740000000000000e+001,
+    "Angulo": 5.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 386,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.207",
+    "Forca": 1.670000000000000e+001,
+    "Angulo": 3.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 387,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.327",
+    "Forca": 1.640000000000000e+001,
+    "Angulo": 1.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 388,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.453",
+    "Forca": 1.760000000000000e+001,
+    "Angulo": -1.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 389,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.580",
+    "Forca": 1.550000000000000e+001,
+    "Angulo": -3.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 390,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.707",
+    "Forca": 1.540000000000000e+001,
+    "Angulo": -5.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 391,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.830",
+    "Forca": 1.620000000000000e+001,
+    "Angulo": -8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 392,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:58.953",
+    "Forca": 1.550000000000000e+001,
+    "Angulo": -1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 393,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.077",
+    "Forca": 1.600000000000000e+001,
+    "Angulo": -1.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 394,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.200",
+    "Forca": 1.430000000000000e+001,
+    "Angulo": -1.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 395,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.330",
+    "Forca": 1.320000000000000e+001,
+    "Angulo": -1.600000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 396,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.450",
+    "Forca": 1.250000000000000e+001,
+    "Angulo": -1.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 397,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.580",
+    "Forca": 1.290000000000000e+001,
+    "Angulo": -2.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 398,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.703",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -2.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 399,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.827",
+    "Forca": 1.120000000000000e+001,
+    "Angulo": -2.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 400,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:19:59.953",
+    "Forca": 1.260000000000000e+001,
+    "Angulo": -2.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 401,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.080",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -2.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 402,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.203",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -3.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 403,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.327",
+    "Forca": 1.180000000000000e+001,
+    "Angulo": -3.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 404,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.450",
+    "Forca": 1.100000000000000e+001,
+    "Angulo": -3.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 405,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.577",
+    "Forca": 1.060000000000000e+001,
+    "Angulo": -3.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 406,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.700",
+    "Forca": 1.230000000000000e+001,
+    "Angulo": -3.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 407,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.830",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -4.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 408,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:00.957",
+    "Forca": 1.040000000000000e+001,
+    "Angulo": -4.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 409,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.077",
+    "Forca": 1.110000000000000e+001,
+    "Angulo": -4.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 410,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.203",
+    "Forca": 1.180000000000000e+001,
+    "Angulo": -4.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 411,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.330",
+    "Forca": 1.080000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 412,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.453",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 413,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.577",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 414,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.700",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 415,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.830",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 416,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:01.953",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 417,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.077",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 418,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.203",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 419,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.327",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 420,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.450",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 421,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.580",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 422,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.703",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 423,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.830",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 424,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:02.950",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 425,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.073",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 426,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.190",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 427,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.313",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 428,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.440",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 429,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.560",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 430,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.690",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 431,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.813",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 432,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:03.933",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 433,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.063",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 434,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.187",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 435,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.310",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 436,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.440",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 437,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.560",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 438,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.687",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 439,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.813",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 440,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:04.940",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 441,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.060",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 442,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.190",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 443,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.313",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 444,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.437",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 445,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.560",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 446,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.690",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 447,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.813",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 448,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:05.937",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 449,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:06.063",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 450,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:06.187",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 451,
+    "Rastreabilidade": "B2231000901",
+    "Data": "2022-09-02T14:20:06.313",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.300000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 601,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:25.563",
+    "Forca": 3.700000000000000e+000,
+    "Angulo": -4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 602,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:25.693",
+    "Forca": 6.800000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 603,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:25.813",
+    "Forca": 5.900000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 604,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:25.937",
+    "Forca": 7.400000000000000e+000,
+    "Angulo": -4.700000000000000e+001,
+    "Velocidade": 5.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 605,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.070",
+    "Forca": 5.500000000000000e+000,
+    "Angulo": -4.500000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 606,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.190",
+    "Forca": 4.500000000000000e+000,
+    "Angulo": -4.400000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 607,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.313",
+    "Forca": 4.900000000000000e+000,
+    "Angulo": -4.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 608,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.437",
+    "Forca": 1.020000000000000e+001,
+    "Angulo": -4.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 609,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.567",
+    "Forca": 1.850000000000000e+001,
+    "Angulo": -3.800000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 610,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.690",
+    "Forca": 2.140000000000000e+001,
+    "Angulo": -3.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 611,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.817",
+    "Forca": 2.370000000000000e+001,
+    "Angulo": -3.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 612,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:26.957",
+    "Forca": 2.290000000000000e+001,
+    "Angulo": -3.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 613,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.077",
+    "Forca": 2.290000000000000e+001,
+    "Angulo": -3.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 614,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.210",
+    "Forca": 2.310000000000000e+001,
+    "Angulo": -2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 615,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.350",
+    "Forca": 2.410000000000000e+001,
+    "Angulo": -2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 616,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.473",
+    "Forca": 2.380000000000000e+001,
+    "Angulo": -2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 617,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.597",
+    "Forca": 2.170000000000000e+001,
+    "Angulo": -2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 618,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.723",
+    "Forca": 2.250000000000000e+001,
+    "Angulo": -1.900000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 619,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.847",
+    "Forca": 2.250000000000000e+001,
+    "Angulo": -1.700000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 620,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:27.970",
+    "Forca": 2.280000000000000e+001,
+    "Angulo": -1.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 621,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.093",
+    "Forca": 2.250000000000000e+001,
+    "Angulo": -1.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 622,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.223",
+    "Forca": 2.130000000000000e+001,
+    "Angulo": -1.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 623,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.347",
+    "Forca": 2.050000000000000e+001,
+    "Angulo": -9.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 624,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.473",
+    "Forca": 1.930000000000000e+001,
+    "Angulo": -7.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 625,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.597",
+    "Forca": 1.800000000000000e+001,
+    "Angulo": -5.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 626,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.720",
+    "Forca": 1.850000000000000e+001,
+    "Angulo": -3.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 627,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.843",
+    "Forca": 1.660000000000000e+001,
+    "Angulo": -1.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 628,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:28.973",
+    "Forca": 1.690000000000000e+001,
+    "Angulo": 1.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 629,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.110",
+    "Forca": 1.540000000000000e+001,
+    "Angulo": 3.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 630,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.240",
+    "Forca": 1.580000000000000e+001,
+    "Angulo": 6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 631,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.363",
+    "Forca": 1.340000000000000e+001,
+    "Angulo": 8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 632,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.503",
+    "Forca": 1.350000000000000e+001,
+    "Angulo": 1.000000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 633,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.623",
+    "Forca": 1.290000000000000e+001,
+    "Angulo": 1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 634,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.750",
+    "Forca": 1.300000000000000e+001,
+    "Angulo": 1.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 635,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:29.877",
+    "Forca": 1.270000000000000e+001,
+    "Angulo": 1.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 636,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30",
+    "Forca": 1.160000000000000e+001,
+    "Angulo": 1.800000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 637,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.130",
+    "Forca": 1.160000000000000e+001,
+    "Angulo": 2.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 638,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.253",
+    "Forca": 1.120000000000000e+001,
+    "Angulo": 2.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 639,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.373",
+    "Forca": 9.800000000000001e+000,
+    "Angulo": 2.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 640,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.503",
+    "Forca": 1.040000000000000e+001,
+    "Angulo": 2.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 641,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.627",
+    "Forca": 9.699999999999999e+000,
+    "Angulo": 2.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 642,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.750",
+    "Forca": 9.000000000000000e+000,
+    "Angulo": 3.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 643,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:30.877",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 3.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 644,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31",
+    "Forca": 8.199999999999999e+000,
+    "Angulo": 3.400000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 645,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.123",
+    "Forca": 6.800000000000000e+000,
+    "Angulo": 3.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 646,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.253",
+    "Forca": 7.200000000000000e+000,
+    "Angulo": 3.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 647,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.373",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.400000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 648,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.503",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 649,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.643",
+    "Forca": 7.000000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 650,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.770",
+    "Forca": 6.000000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 6.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 651,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:31.893",
+    "Forca": 8.199999999999999e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 652,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:32.013",
+    "Forca": 5.600000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 653,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:32.143",
+    "Forca": 4.200000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 654,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:32.267",
+    "Forca": 5.100000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 655,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.317",
+    "Forca": 2.300000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 656,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.440",
+    "Forca": 4.300000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 657,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.563",
+    "Forca": 4.700000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 658,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.690",
+    "Forca": 3.200000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 7.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 659,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.830",
+    "Forca": 4.800000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 1.000000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 660,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:37.953",
+    "Forca": 4.400000000000000e+000,
+    "Angulo": 4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 661,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.083",
+    "Forca": 2.200000000000000e+000,
+    "Angulo": 4.300000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 662,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.203",
+    "Forca": 1.900000000000000e+000,
+    "Angulo": 4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 663,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.330",
+    "Forca": 2.000000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 664,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.453",
+    "Forca": 1.600000000000000e+000,
+    "Angulo": 3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 665,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.580",
+    "Forca": 1.700000000000000e+000,
+    "Angulo": 3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 666,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.703",
+    "Forca": 3.000000000000000e+000,
+    "Angulo": 3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 667,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.837",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 668,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:38.957",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": 2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 669,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.080",
+    "Forca": 1.350000000000000e+001,
+    "Angulo": 2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 670,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.203",
+    "Forca": 1.300000000000000e+001,
+    "Angulo": 2.500000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 671,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.333",
+    "Forca": 1.530000000000000e+001,
+    "Angulo": 2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 672,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.473",
+    "Forca": 1.310000000000000e+001,
+    "Angulo": 2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 673,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.600",
+    "Forca": 1.420000000000000e+001,
+    "Angulo": 1.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 674,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.720",
+    "Forca": 1.490000000000000e+001,
+    "Angulo": 1.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 675,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.860",
+    "Forca": 1.650000000000000e+001,
+    "Angulo": 1.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 676,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:39.987",
+    "Forca": 1.700000000000000e+001,
+    "Angulo": 1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 677,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.113",
+    "Forca": 1.730000000000000e+001,
+    "Angulo": 1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 678,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.240",
+    "Forca": 1.820000000000000e+001,
+    "Angulo": 8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 679,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.377",
+    "Forca": 1.760000000000000e+001,
+    "Angulo": 6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 680,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.507",
+    "Forca": 1.810000000000000e+001,
+    "Angulo": 4.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 681,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.627",
+    "Forca": 1.610000000000000e+001,
+    "Angulo": 2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 682,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.770",
+    "Forca": 1.740000000000000e+001,
+    "Angulo": 0.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 683,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:40.897",
+    "Forca": 1.550000000000000e+001,
+    "Angulo": -2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 684,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.017",
+    "Forca": 1.670000000000000e+001,
+    "Angulo": -4.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 685,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.147",
+    "Forca": 1.610000000000000e+001,
+    "Angulo": -6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 686,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.270",
+    "Forca": 1.460000000000000e+001,
+    "Angulo": -8.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 687,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.393",
+    "Forca": 1.440000000000000e+001,
+    "Angulo": -1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 688,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.517",
+    "Forca": 1.530000000000000e+001,
+    "Angulo": -1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 689,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.657",
+    "Forca": 1.460000000000000e+001,
+    "Angulo": -1.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 690,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.783",
+    "Forca": 1.440000000000000e+001,
+    "Angulo": -1.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 691,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:41.907",
+    "Forca": 1.300000000000000e+001,
+    "Angulo": -1.900000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 692,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.030",
+    "Forca": 1.330000000000000e+001,
+    "Angulo": -2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 693,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.163",
+    "Forca": 1.330000000000000e+001,
+    "Angulo": -2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 694,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.283",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 695,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.407",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 696,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.550",
+    "Forca": 1.140000000000000e+001,
+    "Angulo": -2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 697,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.677",
+    "Forca": 1.110000000000000e+001,
+    "Angulo": -3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 698,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.803",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 699,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:42.940",
+    "Forca": 1.130000000000000e+001,
+    "Angulo": -3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 700,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.070",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 701,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.190",
+    "Forca": 1.150000000000000e+001,
+    "Angulo": -3.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 702,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.313",
+    "Forca": 1.130000000000000e+001,
+    "Angulo": -4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 703,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.440",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -4.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 704,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.567",
+    "Forca": 1.070000000000000e+001,
+    "Angulo": -4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 705,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.687",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 706,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.817",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 707,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:43.937",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 708,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.063",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 709,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.193",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 710,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.330",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 711,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.457",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 712,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.577",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 713,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.710",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 714,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.830",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 715,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:44.957",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 716,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.080",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 717,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.220",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 718,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.343",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 719,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.467",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 720,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.593",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 721,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.707",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 722,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.830",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 723,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:45.960",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 724,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.097",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 725,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.220",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 726,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.353",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 727,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.490",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 728,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.610",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 729,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.740",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 730,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.863",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 731,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:46.987",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 732,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.113",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 733,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.237",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 734,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.363",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 735,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.483",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 736,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.613",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 737,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.753",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 738,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:47.873",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 739,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.007",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 740,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.143",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 741,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.263",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 742,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.393",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 743,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.517",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 744,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.647",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 745,
+    "Rastreabilidade": "B2231001304",
+    "Data": "2022-09-02T14:42:48.770",
+    "Forca": 9.400000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.200000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 746,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:36.717",
+    "Forca": 4.000000000000000e-001,
+    "Angulo": -4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 747,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:36.840",
+    "Forca": 7.000000000000000e-001,
+    "Angulo": -4.900000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 748,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:36.970",
+    "Forca": 1.000000000000000e+000,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 749,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.093",
+    "Forca": 6.000000000000000e-001,
+    "Angulo": -4.700000000000000e+001,
+    "Velocidade": 7.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 750,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.217",
+    "Forca": 4.600000000000000e+000,
+    "Angulo": -4.500000000000000e+001,
+    "Velocidade": 1.400000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 751,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.343",
+    "Forca": 7.200000000000000e+000,
+    "Angulo": -4.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 752,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.467",
+    "Forca": 1.590000000000000e+001,
+    "Angulo": -4.100000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 753,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.590",
+    "Forca": 2.120000000000000e+001,
+    "Angulo": -3.900000000000000e+001,
+    "Velocidade": 1.400000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 754,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.723",
+    "Forca": 2.200000000000000e+001,
+    "Angulo": -3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 755,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.857",
+    "Forca": 2.200000000000000e+001,
+    "Angulo": -3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 756,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:37.983",
+    "Forca": 2.080000000000000e+001,
+    "Angulo": -3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 757,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.113",
+    "Forca": 2.300000000000000e+001,
+    "Angulo": -3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 758,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.257",
+    "Forca": 2.140000000000000e+001,
+    "Angulo": -2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 759,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.387",
+    "Forca": 2.140000000000000e+001,
+    "Angulo": -2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 760,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.510",
+    "Forca": 2.230000000000000e+001,
+    "Angulo": -2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 761,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.640",
+    "Forca": 2.310000000000000e+001,
+    "Angulo": -2.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 762,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.760",
+    "Forca": 2.340000000000000e+001,
+    "Angulo": -2.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 763,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:38.890",
+    "Forca": 2.370000000000000e+001,
+    "Angulo": -1.800000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 764,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.017",
+    "Forca": 2.340000000000000e+001,
+    "Angulo": -1.600000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 765,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.140",
+    "Forca": 2.360000000000000e+001,
+    "Angulo": -1.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 766,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.263",
+    "Forca": 2.340000000000000e+001,
+    "Angulo": -1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 767,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.393",
+    "Forca": 2.350000000000000e+001,
+    "Angulo": -1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 768,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.513",
+    "Forca": 2.320000000000000e+001,
+    "Angulo": -8.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 769,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.647",
+    "Forca": 2.370000000000000e+001,
+    "Angulo": -6.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 770,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.777",
+    "Forca": 2.310000000000000e+001,
+    "Angulo": -4.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 771,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:39.910",
+    "Forca": 2.320000000000000e+001,
+    "Angulo": -2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 772,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.030",
+    "Forca": 2.300000000000000e+001,
+    "Angulo": 0.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 773,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.153",
+    "Forca": 2.280000000000000e+001,
+    "Angulo": 2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 774,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.277",
+    "Forca": 2.250000000000000e+001,
+    "Angulo": 4.000000000000000e+000,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 775,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.400",
+    "Forca": 2.290000000000000e+001,
+    "Angulo": 6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 776,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.530",
+    "Forca": 2.270000000000000e+001,
+    "Angulo": 8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 777,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.650",
+    "Forca": 2.270000000000000e+001,
+    "Angulo": 1.000000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 778,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.783",
+    "Forca": 2.220000000000000e+001,
+    "Angulo": 1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 779,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:40.907",
+    "Forca": 2.260000000000000e+001,
+    "Angulo": 1.400000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 780,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.027",
+    "Forca": 2.220000000000000e+001,
+    "Angulo": 1.600000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 781,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.157",
+    "Forca": 2.100000000000000e+001,
+    "Angulo": 1.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 782,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.280",
+    "Forca": 2.150000000000000e+001,
+    "Angulo": 2.100000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 783,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.407",
+    "Forca": 2.240000000000000e+001,
+    "Angulo": 2.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 784,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.527",
+    "Forca": 1.080000000000000e+001,
+    "Angulo": 2.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 785,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.657",
+    "Forca": 9.900000000000000e+000,
+    "Angulo": 2.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 786,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.780",
+    "Forca": 1.110000000000000e+001,
+    "Angulo": 2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 787,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:41.910",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": 3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 788,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.033",
+    "Forca": 8.500000000000000e+000,
+    "Angulo": 3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 789,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.153",
+    "Forca": 8.400000000000000e+000,
+    "Angulo": 3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 790,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.280",
+    "Forca": 7.400000000000000e+000,
+    "Angulo": 3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 791,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.407",
+    "Forca": 7.600000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 792,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.527",
+    "Forca": 8.000000000000000e+000,
+    "Angulo": 4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 793,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.657",
+    "Forca": 7.800000000000000e+000,
+    "Angulo": 4.300000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 794,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.777",
+    "Forca": 8.000000000000000e+000,
+    "Angulo": 4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 795,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:42.907",
+    "Forca": 9.500000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 796,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.027",
+    "Forca": 7.200000000000000e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 797,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.160",
+    "Forca": 7.200000000000000e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 5.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 798,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.283",
+    "Forca": 4.500000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 1.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 799,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.407",
+    "Forca": 3.900000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 800,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.530",
+    "Forca": 5.100000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 801,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.660",
+    "Forca": 7.100000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 802,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.780",
+    "Forca": 8.100000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 803,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:43.907",
+    "Forca": 7.200000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 804,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:44.033",
+    "Forca": 6.700000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 2.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 805,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.093",
+    "Forca": 1.700000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 806,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.220",
+    "Forca": 4.600000000000000e+000,
+    "Angulo": 5.000000000000000e+001,
+    "Velocidade": 0.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 807,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.347",
+    "Forca": 2.800000000000000e+000,
+    "Angulo": 4.900000000000000e+001,
+    "Velocidade": 3.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 808,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.470",
+    "Forca": 3.400000000000000e+000,
+    "Angulo": 4.800000000000000e+001,
+    "Velocidade": 7.000000000000000e+000,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 809,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.593",
+    "Forca": 4.800000000000000e+000,
+    "Angulo": 4.700000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 810,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.713",
+    "Forca": 3.400000000000000e+000,
+    "Angulo": 4.500000000000000e+001,
+    "Velocidade": 1.400000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 811,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.843",
+    "Forca": 2.300000000000000e+000,
+    "Angulo": 4.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 812,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:49.967",
+    "Forca": 1.600000000000000e+000,
+    "Angulo": 4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 813,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.093",
+    "Forca": 1.300000000000000e+000,
+    "Angulo": 3.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 814,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.230",
+    "Forca": 1.900000000000000e+000,
+    "Angulo": 3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 815,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.360",
+    "Forca": 4.200000000000000e+000,
+    "Angulo": 3.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 816,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.483",
+    "Forca": 8.900000000000000e+000,
+    "Angulo": 3.300000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 817,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.613",
+    "Forca": 1.230000000000000e+001,
+    "Angulo": 3.000000000000000e+001,
+    "Velocidade": 1.500000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 818,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.737",
+    "Forca": 1.530000000000000e+001,
+    "Angulo": 2.800000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 819,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.857",
+    "Forca": 1.420000000000000e+001,
+    "Angulo": 2.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 820,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:50.993",
+    "Forca": 1.540000000000000e+001,
+    "Angulo": 2.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 821,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.127",
+    "Forca": 1.500000000000000e+001,
+    "Angulo": 2.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 822,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.250",
+    "Forca": 1.510000000000000e+001,
+    "Angulo": 2.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 823,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.373",
+    "Forca": 1.460000000000000e+001,
+    "Angulo": 1.800000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 824,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.497",
+    "Forca": 1.460000000000000e+001,
+    "Angulo": 1.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 825,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.627",
+    "Forca": 1.430000000000000e+001,
+    "Angulo": 1.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 826,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.747",
+    "Forca": 1.550000000000000e+001,
+    "Angulo": 1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 827,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:51.873",
+    "Forca": 1.760000000000000e+001,
+    "Angulo": 1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 828,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52",
+    "Forca": 1.770000000000000e+001,
+    "Angulo": 8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 829,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.123",
+    "Forca": 1.750000000000000e+001,
+    "Angulo": 6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 830,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.247",
+    "Forca": 1.820000000000000e+001,
+    "Angulo": 4.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 831,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.370",
+    "Forca": 2.370000000000000e+001,
+    "Angulo": 2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 832,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.497",
+    "Forca": 2.350000000000000e+001,
+    "Angulo": 0.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 833,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.623",
+    "Forca": 2.340000000000000e+001,
+    "Angulo": -2.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 834,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.747",
+    "Forca": 1.630000000000000e+001,
+    "Angulo": -4.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 835,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.877",
+    "Forca": 1.690000000000000e+001,
+    "Angulo": -6.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 836,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:52.997",
+    "Forca": 1.600000000000000e+001,
+    "Angulo": -8.000000000000000e+000,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 837,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.117",
+    "Forca": 1.540000000000000e+001,
+    "Angulo": -1.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 838,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.247",
+    "Forca": 1.430000000000000e+001,
+    "Angulo": -1.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 839,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.370",
+    "Forca": 1.450000000000000e+001,
+    "Angulo": -1.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 840,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.497",
+    "Forca": 1.360000000000000e+001,
+    "Angulo": -1.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 841,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.627",
+    "Forca": 1.290000000000000e+001,
+    "Angulo": -1.800000000000000e+001,
+    "Velocidade": 1.700000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 842,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.747",
+    "Forca": 1.300000000000000e+001,
+    "Angulo": -2.000000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 843,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:53.870",
+    "Forca": 1.300000000000000e+001,
+    "Angulo": -2.200000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 844,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.003",
+    "Forca": 1.270000000000000e+001,
+    "Angulo": -2.400000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 845,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.137",
+    "Forca": 1.240000000000000e+001,
+    "Angulo": -2.600000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 846,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.267",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -2.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 847,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.390",
+    "Forca": 1.190000000000000e+001,
+    "Angulo": -3.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 848,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.510",
+    "Forca": 1.210000000000000e+001,
+    "Angulo": -3.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 849,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.643",
+    "Forca": 1.160000000000000e+001,
+    "Angulo": -3.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 850,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.777",
+    "Forca": 1.200000000000000e+001,
+    "Angulo": -3.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 851,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:54.907",
+    "Forca": 1.130000000000000e+001,
+    "Angulo": -3.900000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 852,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.027",
+    "Forca": 1.220000000000000e+001,
+    "Angulo": -4.100000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 853,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.153",
+    "Forca": 1.200000000000000e+001,
+    "Angulo": -4.300000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 854,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.280",
+    "Forca": 1.070000000000000e+001,
+    "Angulo": -4.500000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 855,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.403",
+    "Forca": 1.070000000000000e+001,
+    "Angulo": -4.700000000000000e+001,
+    "Velocidade": 1.600000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 856,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.523",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 857,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.657",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 858,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.780",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 859,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:55.903",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 860,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.033",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 861,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.153",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 862,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.277",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 863,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.410",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 864,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.550",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 865,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.687",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 866,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.807",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 867,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:56.943",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 868,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.080",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 869,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.200",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 870,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.330",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 871,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.450",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 872,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.583",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 873,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.717",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 874,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.840",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 875,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:57.963",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 876,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.097",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 877,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.220",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 878,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.343",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 879,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.470",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 880,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.590",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 881,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.723",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 882,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.857",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 883,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:58.983",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 884,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.110",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 885,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.237",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 886,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.357",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 887,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.480",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 888,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.610",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 889,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.737",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 890,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:41:59.870",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 891,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:42:00.003",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 892,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:42:00.120",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 893,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:42:00.250",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 894,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:42:00.373",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  },
+  {
+    "IdTesteFinal": 895,
+    "Rastreabilidade": "B2231001401",
+    "Data": "2022-08-04T15:42:00.497",
+    "Forca": 1.030000000000000e+001,
+    "Angulo": -4.800000000000000e+001,
+    "Velocidade": 1.100000000000000e+001,
+    "Posto": 5
+  }
+]

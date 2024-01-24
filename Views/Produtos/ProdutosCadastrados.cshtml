@@ -1,0 +1,196 @@
+﻿@model IEnumerable<Conectasys.Portal.Models.ProdutoInfo>
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+@using Newtonsoft.Json;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8 , user-scalable=no" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="~/css/Cadastros.css"/>
+    <link rel="stylesheet" href="~/css/DataTable.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Produtos
+            </div>
+        </div>
+
+        <form action="pesquisar" method="post" onsubmit="Submit()">
+            <div class="barra-pesquisa-container">
+                <div class="barra-pesquisa-content">
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Código
+                            </div>
+                            <div class="input-content">
+                                <input type="text" name="codigo" class="input" value="@ViewBag.CodigoMaterial" autofocus autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-pesquisar-container">
+                    <input type="submit" class="button-pesquisar" value="Pesquisar" />
+                </div>
+            </div>
+        </form>
+
+        <div class="button-filtros-container">
+            <input class="button-filtros" type="button" value="Expandir" />
+        </div>
+
+        <div class="button-funcoes-container">
+            <button class="button-exportar">Exportar</button>
+            <input type="button" value="Novo" class="button-novo" onclick="location.href='@Url.Action("Novo", "Produtos", new { codigo =  ViewBag.CodigoMaterial })'" />
+        </div>
+
+         <div class="table-container">
+            <div class="table-content">
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left;">Código</th>
+                            <th style="text-align:left;">Descrição</th>
+                            <th>Foto</th>
+                            <th style="width:300px;"></th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td data-label="Código">
+                                    <div class="flex-td">
+                                        @item.Material
+                                    </div>
+                                </td>
+                                <td data-label="Descrição">
+                                    <div class="flex-td">
+                                        @item.Descricao
+                                    </div>
+                                </td>
+                                <td data-label="Foto" id="coluna-foto">
+                                    <div class="flex-td">
+                                        <div class="foto-container">
+                                            <img src=@item.StringFoto class="foto" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="noExl">
+
+                                    <div class="table-buttons-container">
+                                        <div class="table-buttons-content">
+                                            <input type="button" value="Editar" class="table-button-update" onclick="location.href='@Url.Action("Editar", "Produtos", new { material = item.Material, codigo = ViewBag.CodigoMaterial })'" />
+                                        </div>
+                                        <div class="table-buttons-content">
+                                            @using (Html.BeginForm("deletar", "Produtos", new { material = item.Material, codigo = ViewBag.CodigoMaterial }, FormMethod.Post))
+                                            {
+                                                <button class="table-button-delete">Deletar</button>
+                                            }
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/jquery.table2excel.js"></script>
+
+    <script>
+
+        @{
+            var erro = Json.Serialize(ViewBag.Erro);
+        }
+
+        switch (@erro) {
+            case 1:
+                alert("Erro no cadastro, tente novamente!");
+                break;
+
+            case 2:
+                alert("Erro na atualização, tente novamente!");
+                break;
+
+            case 3:
+                alert("Erro no delete, tente novamente!");
+                break;
+
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var table = $('#table').DataTable();
+            var month = new Date().getMonth() + 1;
+
+            $(".button-filtros").on("click", function () {
+                if ($(".barra-pesquisa-container").css("visibility") == "hidden") {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".table-container").css("height", "calc(100% - 306px)");
+                    $(".button-filtros").val("Reduzir");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                    $(".button-filtros").val("Expandir");
+                }
+            });
+
+            window.addEventListener('resize', function (event) {
+                if ($(window).width() > 1375) {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".button-filtros-container").css("opacity", "0");
+                    $(".button-filtros-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 230px)");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".button-filtros-container").css("opacity", "1");
+                    $(".button-filtros-container").css("height", "36px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                }
+            });
+
+            $('.button-exportar').on('click', function () {
+                $('<table>').append($(table.table().header()).clone()).append(table.$('tr').clone()).table2excel({
+                    exclude: ".noExl",
+                    name: "Produtos",
+                    filename: "Produtos" + "/" + new Date().getDate() + "/" + month + "/" + new Date().getFullYear(),
+                    fileext: ".xls",
+                    exclude_img: true,
+                    exclude_links: true,
+                    exclude_inputs: true
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+

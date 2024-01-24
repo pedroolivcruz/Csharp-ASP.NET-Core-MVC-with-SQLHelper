@@ -1,0 +1,218 @@
+﻿@model IEnumerable<Conectasys.Portal.Models.RastreabilidadeSoldagemInfo>
+@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <title>Rastreabilidades Soldagem</title>
+    <link rel="stylesheet" href="~/css/DataTable.css" />
+    <link rel="stylesheet" href="~/css/Cadastros.css" />
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Relatórios Soldagem
+            </div>
+        </div>
+
+        <form action="pesquisar" method="post" onsubmit="Submit()">
+            <div class="barra-pesquisa-container">
+                <div class="barra-pesquisa-content">
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Rastreabilidade
+                            </div>
+                            <div class="input-content">
+                                <input type="text" name="rastreabilidade" class="input" value="@ViewBag.Rastreabilidade" autocomplete="off" autofocus />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Data Início
+                            </div>
+                            <div class="input-content">
+                                <input type="datetime-local" name="DataInicio" class="input" id="dataInicio" value="@ViewBag.DataInicio" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Data Fim
+                            </div>
+                            <div class="input-content">
+                                <input type="datetime-local" name="DataFim" class="input" id="dataFim" value="@ViewBag.DataFim" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-pesquisar-container">
+                    <input type="submit" class="button-pesquisar" value="Pesquisar" />
+                </div>
+            </div>
+        </form>
+
+        <div class="button-filtros-container">
+            <input class="button-filtros" type="button" value="Expandir" />
+        </div>
+
+        <div class="button-funcoes-relatorios-container">
+            <button class="button-exportar">Exportar</button>            
+        </div>
+
+        <div class="table-container">
+            <div class="table-content">
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left;">ÍndIce</th>
+                            <th style="text-align:left;">Rastreabilidade</th>
+                            <th style="text-align:left;">Data Início</th>
+                            <th style="text-align:left;">Data Fim</th>
+                            <th style="text-align:left;">Status</th>
+                            <th style="width:300px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td data-label="Índice">
+                                    <div class="flex-td">
+                                        @item.Index
+                                    </div>
+                                </td>
+                                <td data-label="Rastreabilidade">
+                                    <div class="flex-td">
+                                        @item.Rastreabilidade
+                                    </div>
+                                </td>
+                                <td data-label="Data Início">
+                                    <div class="flex-td">
+                                        @item.DataInicio
+                                    </div>
+                                </td>
+                                <td data-label="Data Fim">
+                                    <div class="flex-td">
+                                        @item.DataFim
+                                    </div>
+                                </td>
+                                <td data-label="Status">
+                                    @if (item.Descricao == "Concluído")
+                                    {
+                                        <div class="flex-td" style="color:green; font-weight:700;">
+                                            @item.Descricao.ToUpper()
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="flex-td" style="color:red; font-weight:700;">
+                                            @item.Descricao.ToUpper()
+                                        </div>
+                                    }
+                                </td>
+                                <td class="noExl">
+                                    <div class="table-buttons-container">
+                                        <div class="table-buttons-content">
+                                            @if (item.Rastreabilidade.Contains("F"))
+                                            {
+                                                <input type="button" value="Relatório" class="table-button-relatorio" onclick="location.href='@Url.Action("RelatorioFrontal", "RelatoriosSoldagem", new { rastreabilidade = item.Rastreabilidade, rastreabilidadePesquisa = ViewBag.Rastreabilidade, dataInicio = ViewBag.DataInicio, dataFim = ViewBag.DataFim  })'" />
+                                            }
+                                            else
+                                            {
+                                                <input type="button" value="Relatório" class="table-button-relatorio" onclick="location.href='@Url.Action("RelatorioTraseira", "RelatoriosSoldagem", new { rastreabilidade = item.Rastreabilidade, rastreabilidadePesquisa = ViewBag.Rastreabilidade, dataInicio = ViewBag.DataInicio, dataFim = ViewBag.DataFim  })'" />
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/jquery.table2excel.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var table = $('#table').DataTable();
+            $('.dataTables_length').addClass('table-button');
+            var month = new Date().getMonth() + 1;
+
+            $(".button-filtros").on("click", function () {
+                if ($(".barra-pesquisa-container").css("visibility") == "hidden") {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".table-container").css("height", "calc(100% - 446px)");
+                    $(".button-filtros").val("Reduzir");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                    $(".button-filtros").val("Expandir");
+                }
+            });
+
+            window.addEventListener('resize', function (event) {
+                if ($(window).width() > 1375) {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".button-filtros-container").css("opacity", "0");
+                    $(".button-filtros-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 230px)");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".button-filtros-container").css("opacity", "1");
+                    $(".button-filtros-container").css("height", "36px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                }
+            });
+
+            $('.button-exportar').on('click', function () {
+                $('<table>').append($(table.table().header()).clone()).append(table.$('tr').clone()).table2excel({
+                    exclude: ".noExl",
+                    name: "Relatórios Soldagem",
+                    filename: "Relatorios-Soldagem" + "/" + new Date().getDate() + "/" + month + "/" + new Date().getFullYear(),
+                    fileext: ".xls",
+                    exclude_img: true,
+                    exclude_links: true,
+                    exclude_inputs: true
+                });
+            });
+        });
+    </script>
+}

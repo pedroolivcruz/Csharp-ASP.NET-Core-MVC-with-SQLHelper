@@ -1,0 +1,133 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <title>Novo</title>
+    <link rel="stylesheet" href="~/css/NovoCadastro.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Nova Foto Torque
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "GetFotoTorquesById", new { d =  ViewBag.Descricao })'" />
+            </div>
+        </div>
+
+        <div class="cadastro-container">
+            <form action="cadastrar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+                <input name="descricaoAntiga" value="@ViewBag.Descricao" style="display:none;">
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Descrição
+                    </div>
+                    <div class="row-parametro-container">
+                        <textarea name="descricao" class="parametro" autofocus required autautocomplete="off" placeholder="Insira a descrição aqui!"></textarea>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Tipo Torque
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="tipoTorque" class="parametro" required autocomplete="off">
+                            <option>Componentes</option>
+                            <option>Rala</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Foto
+                    </div>
+                    <div class="row-parametro-container">
+                        <label class="picture" for="picture-input">
+                            <span class="picture-image"></span>
+                        </label>
+                        <input type="file" name="file" id="picture-input" accept="image/png, image/gif, image/jpeg, image/ico, image/PDF" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" class="button-salvar" value="Salvar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        const inputFile = document.querySelector("#picture-input");
+        const pictureImage = document.querySelector(".picture-image");
+        const pictureImageTxt = "Escolha uma imagem!";
+        pictureImage.innerHTML = pictureImageTxt;
+
+        inputFile.addEventListener("change", function (e) {
+            const inputTarget = e.target;
+            const file = inputTarget.files[0];
+
+            $(".picture-image").css("padding", "20px");
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.addEventListener("load", function (e) {
+                    const readerTarget = e.target;
+
+                    const img = document.createElement("img");
+                    img.src = readerTarget.result;
+                    img.classList.add("picture-img");
+
+                    pictureImage.innerHTML = "";
+                    pictureImage.appendChild(img);
+
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                pictureImage.innerHTML = pictureImageTxt;
+            }
+        });
+
+        const txHeight = 16;
+        const tx = document.getElementsByTagName("textarea");
+
+        for (let i = 0; i < tx.length; i++) {
+            if (tx[i].value == '') {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+            }
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput(e) {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        }
+    </script>
+}

@@ -1,0 +1,261 @@
+﻿@model IEnumerable<Conectasys.Portal.Models.ComponenteInfo>
+@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+@using Newtonsoft.Json;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8 , user-scalable=no" />
+    <title>Componentes</title>
+    <link rel="stylesheet" href="~/css/Cadastros.css"/>
+    <link rel="stylesheet" href="~/css/DataTable.css"/>
+</head>
+<body>
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Componentes
+            </div>
+        </div>
+
+        <form action="pesquisar" method="post" onsubmit="Submit()">
+            <div class="barra-pesquisa-container">
+                <div class="barra-pesquisa-content">
+                   <div class="parametro-container">
+                       <div class="parametro-content">
+                            <div class="parametro-title">
+                                Posto
+                            </div>
+                            <div class="input-content">
+                                <select name="posto" class="input">
+                                    @switch (ViewBag.Posto)
+                                    {
+                                        case 2:
+                                            <option>1</option>
+                                            <option selected>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            break;
+
+
+                                        case 3:
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option selected>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            break;
+
+
+                                        case 4:
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option selected>4</option>
+                                            <option>5</option>
+                                            break;
+
+                                        case 5:
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option selected>5</option>
+                                            break;
+
+                                        default:
+                                            <option selected>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            break;
+                                    }
+                                </select>
+                            </div>
+                       </div>                       
+                   </div>
+
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Modelo
+                            </div>
+                            <div class="input-content">
+                                <input type="number" min="1" name="modelo" class="input" required value="@ViewBag.Modelo" autocomplete="off" />
+                            </div>
+                        </div>                        
+                    </div>
+
+                </div>
+                <div class="button-pesquisar-container">
+                    <input type="submit" class="button-pesquisar" value="Pesquisar" />
+                </div>
+            </div>
+        </form>
+            
+        <div class="button-filtros-container">
+            <input class="button-filtros" type="button" value="Expandir"/>
+        </div>
+
+        <div class="button-funcoes-container">
+            <button class="button-exportar">Exportar</button>
+            <input type="button" value="Novo" class="button-novo" onclick="location.href='@Url.Action("Novo", "Componentes", new { posto = ViewBag.Posto, modelo = ViewBag.Modelo })'" />
+        </div>
+
+        <div class="table-container">
+            <div class="table-content">
+                <table class="table " id="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left;">Código Material</th>
+                            <th style="text-align:left;">Descrição</th>
+                            <th style="text-align:left;">Modelo</th>
+                            <th style="text-align:left;">Posto</th>
+                            <th style="width:300px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td data-label="Código Material">
+                                    <div class="flex-td">
+                                        @item.TipoMaterial
+                                    </div>
+                                </td>
+                                <td data-label="Descrição">
+                                    <div class="flex-td">
+                                        @item.Descricao
+                                    </div>
+                                </td>
+                                <td data-label="Modelo">
+                                    <div class="flex-td">
+                                        @item.Modelo
+                                    </div>
+                                </td>
+                                <td data-label="Posto">
+                                    <div class="flex-td">
+                                        @item.Posto
+                                    </div>
+                                </td>
+                                <td class="noExl">
+                                    <div class="table-buttons-container">
+                                        <div class="table-buttons-content">
+                                            <input type="button" value="Editar" class="table-button-update" onclick="location.href='@Url.Action("Editar", "Componentes", new { id = item.IdComponente, posto = ViewBag.Posto, modelo = ViewBag.Modelo })'" />
+                                        </div>
+                                        <div class="table-buttons-content">
+                                            @using (Html.BeginForm("deletar", "Componentes", new { id = item.IdComponente, posto = ViewBag.Posto, modelo = ViewBag.Modelo }, FormMethod.Post))
+                                            {                                                
+                                                <button class="table-button-delete">Deletar</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>    
+</body>
+</html>
+
+@section scripts{
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/jquery.table2excel.js"></script>
+
+    <script>
+
+        @{
+            var erro = Json.Serialize(ViewBag.Erro);
+        }
+
+        switch (@erro) {
+            case 1:
+                alert("Erro no cadastro, tente novamente!");
+                break;
+
+            case 2:
+                alert("Erro na atualização, tente novamente!");
+                break;
+
+            case 3:
+                alert("Erro no delete, tente novamente!");
+                break;
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var table = $('#table').DataTable();
+            var month = new Date().getMonth() + 1;
+
+            $(".button-filtros").on("click", function () {
+                if ($(".barra-pesquisa-container").css("visibility") == "hidden")
+                {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");      
+                    $(".table-container").css("height","calc(100% - 376px)");
+                    $(".button-filtros").val("Reduzir");
+                }
+                else{
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                    $(".button-filtros").val("Expandir");
+                }
+            });
+
+            window.addEventListener('resize', function(event){
+                if ($(window).width() > 1375) {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height","auto");
+                    $(".button-filtros-container").css("opacity", "0");
+                    $(".button-filtros-container").css("height", "0px");
+                    $(".table-container").css("height", "calc(100% - 230px)");
+                }
+                else{
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".button-filtros-container").css("opacity","1");
+                    $(".button-filtros-container").css("height", "36px");
+                    $(".table-container").css("height", "calc(100% - 196px)");
+                }
+            }); 
+
+            $('.button-exportar').on('click', function () {
+                $('<table>').append($(table.table().header()).clone()).append(table.$('tr').clone()).table2excel({
+                    exclude: ".noExl",
+                    name: "Componentes Montagem",
+                    filename: "Componentes-Montagem" + "/" + new Date().getDate() + "/" + month + "/" + new Date().getFullYear(),
+                    fileext: ".xls",
+                    exclude_img: true,
+                    exclude_links: true,
+                    exclude_inputs: true
+                });
+            });
+        });
+    </script>
+}
+
+

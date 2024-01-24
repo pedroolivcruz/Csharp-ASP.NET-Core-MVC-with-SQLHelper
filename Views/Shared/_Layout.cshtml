@@ -1,0 +1,221 @@
+﻿@using Conectasys.Portal
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/Layout.css"/>
+    <link rel="shortcut icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/Loader.css"/>
+    <link rel="stylesheet" href="~/css/Aviso.css"/>
+    <script type="module" src="~/js/Layout.js"></script>
+</head>
+<body>
+
+    @if (Config.IsDemostration)
+    {
+        <div class="aviso">
+            <div class="aviso-flex">
+                Está é uma versão de demonstração, não representa o funcionamento final deste portal
+            </div>
+        </div>
+    }
+
+    <div class="page-container">
+        @RenderBody()
+        <div class="side-bar" id="sideBar">
+            <div class="exit-container">
+                <span class="exit" id="exitMenu" style="color:black;">&times;</span>
+            </div>
+            <div class="side-bar-header" style="color:black;">
+                MENU
+            </div>
+
+            <div class="button-container">
+                <button class="button-content" id="btnCadastros">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="button-text"> Cadastros </div>
+                    <div class="button-flecha-container" id="iconExpandCadastros">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" >
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="button-container">
+                <button class="button-content" id="btnChecklists">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </div>
+                    <div class="button-text"> Checklists </div>
+                    <div class="button-flecha-container" id="iconExpandChecklists">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="button-container"> 
+                <button class="button-content" id="btnDashboards">
+                    <div class="icon-container"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                            <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+                        </svg>
+                    </div>
+                    <div class="button-text"> Dashboards </div>
+                    <div class="button-flecha-container" id="iconExpandDashboards">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="button-container">
+                <button class="button-content" id="btnRelatorios">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                            <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
+                        </svg>
+                    </div>
+                    <div class="button-text"> Relatórios </div>
+                    <div class="button-flecha-container" id="iconExpandRelatorios">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </button>
+            </div> 
+            
+        </div>
+
+        <div class="expanded-bar" id="expandedBarCadastros">
+            <div class="exit-container">
+                <span class="exit" id="exitCasdastros">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Cadastros
+            </div>
+            <input type="button" value="Componentes" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 1})'" />
+            <input type="button" value="Cordões" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 2})'" />
+            <input type="button" value="Eps" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 3})'" />
+            <input type="button" value="Foto Torques" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 4})'" />
+            <input type="button" value="Produtos" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 5})'" />
+            <input type="button" value="Usuários" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 6})'" />
+        </div>
+
+        <div class="expanded-bar" id="expandedBarChecklists">
+            <div class="exit-container">
+                <span class="exit" id="exitChecklists">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Checklists
+            </div>
+            <input type="button" value="Montagem" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 7})'" />
+            <input type="button" value="Soldagem" class="button-expanded-bar" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 8})'" />
+        </div>
+
+        <div class="expanded-bar" id="expandedBarDashboards">
+            <div class="exit-container">
+                <span class="exit" id="exitDashboards">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Dashboards
+            </div>
+            <input type="button" value="Teste Final" class="button-expanded-bar" onclick="location.href='@Url.Action("Dashboard", "DashboardMontagem" )'" />
+        </div>
+
+        <div class="expanded-bar" id="expandedBarRelatorios">
+            <div class="exit-container">
+                <span class="exit" id="exitRelatorios">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Relatórios
+            </div>
+            <input type="button" value="Montagem" class="button-expanded-bar" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosMontagem")'" />
+            <input type="button" value="Soldagem" class="button-expanded-bar" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosSoldagem")'" />
+        </div>
+
+        <div class="opacity-container"></div>
+
+        <button class="button-expand" id="btnExpand">
+            <div class="button-expand-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    function Submit() {
+        document.querySelector('.center').setAttribute("style", "visibility:visible;");
+    }
+
+    $(".button-expanded-bar").on("click", function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $('#table tbody').on('click', '.table-button-relatorio', function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $('#table tbody').on('click', '.table-button-update', function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $('#table tbody').on('click', '.table-button-delete', function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $(".button-novo").on("click", function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $(".button-header").on("click", function () {
+        $(".center").css("visibility", "visible");
+    });
+
+    $(".button-salvar").on("click", function () {
+        $(".center").css("visibility", "visible");
+    });
+
+</script>
+
+
+@await RenderSectionAsync("Scripts",required:false);
+
+
+
+
+
+
+

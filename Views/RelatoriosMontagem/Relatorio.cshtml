@@ -1,0 +1,912 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+@using Conectasys.Portal.Models;
+@using Conectasys.Portal.BLL;
+@using Newtonsoft.Json;
+@model dynamic
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/Relatorios.css" />
+    <title>Relatório Montagem</title>
+</head>
+<body>
+
+     <div class="header-container">
+        <div class="header-content">
+            Relatório Montagem
+        </div>
+        <div class="button-header-container">
+            <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosMontagem", new { r = Model.RastreabilidadePesquisa, c = Model.Componente, dI = Model.DataInicio, dF =  Model.DataFim })'" />
+        </div>
+     </div>
+
+    <div class="barra-pesquisa-container">
+        <button id="btnPDF" class="button-pdf">Gerar PDF</button>
+    </div>
+    <div class="relatorio-container">
+        @{
+            if (Model.ListaInfoRastreabilidade != null)
+            {
+                BllCordoes bllCordoes = new BllCordoes();
+                BllRastreabilidadeMontagem bllRastreabilidade = new BllRastreabilidadeMontagem();
+                List<int> lstCordoes = new List<int>();
+
+                <div class="relatorio-page">
+                    <div class="relatorio-page-content">
+                        <div class="relatorio-page-header-container">
+                            <div class="relatorio-page-header">Relatório Montagem</div>
+                            <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                        </div>
+                        <div class="page-row-sub-title">Rastreabilidade: @Model.CodigoRastreabilidade</div>
+                        <div class="page-row-tipo-estrutura"><b style="margin-right:5px;">Descrição do Produto: </b> @Model.DescricaoProduto</div>
+                        <div class="page-row-tipo-estrutura"><b style="margin-right:5px;">Status de Produção:</b> @Model.StatusRastreabilidade</div>
+                        <img class="page-row-foto-estrutura-container" src="~/resources/buslink-removebg-preview.png" />
+                        <div class="page-row-sub-title">Histórico de Rastreabilidade</div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Posto</th>
+                                    <th>Data Início</th>
+                                    <th>Data Fim</th>
+                                    <th>Operador</th>
+                                </tr>
+                            </thead>
+                            <tbody>                              
+                                @foreach (var item in Model.ListaInfoRastreabilidade)
+                                {
+                                    <tr>
+                                        <td>@item.Posto</td>
+                                        <td>@item.DataInicio</td>
+                                        <td>@item.DataFim</td>
+                                        <td>@item.Operador</td>
+                                    </tr>
+                                }                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                @if (Model.QuantidadeComponentes > 0)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Componentes Adicionados</div>
+                            <table class="table">
+                                <thead style="background-color:white;">
+                                    <tr>
+                                        <th style="width: 40mm; text-align: left; padding-left: 10px;">Código </th>
+                                        <th style="width: 150mm; text-align: left;">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaComponentes)
+                                    {
+                                        <tr>
+                                            <td style="width: 90mm; text-align: left; padding-left: 10px;">@item.CodigoComponente</td>
+                                            <td style="width: 100mm; text-align: left;">@item.Descricao</td>
+                                        </tr>
+
+                                    }                                    
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                }
+
+                @if (Model.ListaInfoRastreabilidadePosto1 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 1</div>
+                                    <div class="title-posto"><b style="margin-right:5px;">Descrição: </b> Montagem do anel externo</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p1.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead style="background-color:white;">
+                                    <tr>
+                                        <th style="width: 20mm; text-align:center;">Status</th>
+                                        <th style="width: 30mm; text-align:center;">Sequência</th>
+                                        <th style="width: 140mm; text-align: left;">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto1)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.ListaInfoRastreabilidadePosto2 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 2 - Etapa 1</div>
+                                    <div class="title-posto"><b style="margin-right:5px;">Descrição: </b> Cravamento e torque de parafusos</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p2.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; ">Status</th>
+                                        <th style="width: 30mm; text-align:center; ">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; ">Descrição</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto2Etapa1)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 2 - Etapa 2</div>
+                                    <div class="title-posto"><b style="margin-right:5px;">Descrição: </b> Cravamento e torque de parafusos da estrutura </div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p2.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; ">Status</th>
+                                        <th style="width: 30mm; text-align:center; ">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; ">Descrição</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto2Etapa2)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    @if (Model.QuantidadeTorquesComponentes > 0)
+                    {
+                        double numComponentes = Model.QuantidadeTorquesComponentes / 20;
+                        double numPaginasComponentes = Math.Floor(numComponentes);
+
+                        int torquesExtraComponentes = Model.QuantidadeTorquesComponentes % 20;
+                        int indexTorqueComponentes = 0;
+                        int auxIndexTorqueComponentes = 0;
+
+                        List<TorqueInfo> lstTorquesComponentes = new List<TorqueInfo>();
+                        lstTorquesComponentes = Model.ListaTorquesComponentes;
+
+                        for (int i = 0; i < numPaginasComponentes; i++)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Montagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title">Torques Componentes</div>
+                                    <table class="table">
+                                        <thead style="background-color:white;">
+                                            <tr>
+                                                <th style="width: 50mm; text-align:center;">Id Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Ângulo</th>
+                                                <th style="width: 60mm; text-align: center;">Operador</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for (int j = 0; j < 20; j++)
+                                            {
+                                                auxIndexTorqueComponentes = indexTorqueComponentes;
+                                                auxIndexTorqueComponentes++;
+
+                                                <tr>
+                                                    <td style="width: 50mm; text-align: center; ">@auxIndexTorqueComponentes</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Torque</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Angulo</td>
+                                                    <td style="width: 60mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Operador</td>
+                                                </tr>
+
+                                                indexTorqueComponentes++;
+                                            }                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        }
+
+                        @if (torquesExtraComponentes > 0)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Montagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title">Torques Componentes</div>
+                                    <table class="table">
+                                        <thead style="background-color:white;">
+                                            <tr>
+                                                <th style="width: 50mm; text-align:center;">Id Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Ângulo</th>
+                                                <th style="width: 60mm; text-align: center;">Operador</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for (int k = 0; k < torquesExtraComponentes; k++)
+                                            {
+                                                auxIndexTorqueComponentes = indexTorqueComponentes;
+                                                auxIndexTorqueComponentes++;
+
+                                                <tr>
+                                                    <td style="width: 50mm; text-align: center; ">@auxIndexTorqueComponentes</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Torque</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Angulo</td>
+                                                    <td style="width: 60mm; text-align: center; ">@lstTorquesComponentes[indexTorqueComponentes].Operador</td>
+                                                </tr>
+
+                                                indexTorqueComponentes++;
+                                            }
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        }
+                    }
+
+                    @if (Model.QuantidadeTorquesRala > 0)
+                    {
+                        double numRala = Model.QuantidadeTorquesRala / 20;
+                        double numPaginasRala = Math.Floor(numRala);
+
+                        int torquesExtraRala = Model.QuantidadeTorquesRala % 20;
+                        int indexTorqueRala = 0;
+                        int auxIndexTorqueRala = 0;
+
+                        List<TorqueInfo> lstTorquesRala = new List<TorqueInfo>();
+                        lstTorquesRala = Model.ListaTorquesRala;
+
+                        <div class="relatorio-page">
+                            <div class="relatorio-page-content">
+                                <div class="relatorio-page-header-container">
+                                    <div class="relatorio-page-header">Relatório Montagem</div>
+                                    <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                </div>
+                                <div class="page-row-sub-title">Método de Aplicação de Torques</div>
+                                <div class="page-row-descricao" style="border-bottom:1px black solid;">
+                                    <div class="title-descricao">
+                                        Descrição:
+                                    </div>
+                                    <textarea readonly class="descricao">@Model.DescricaoFotoTorque</textarea>
+                                </div>
+                                <img class="page-row-foto-descritiva" src="@Model.UrlFotoTorque" />
+                            </div>
+                        </div>
+
+                        for (int i = 0; i < numPaginasRala; i++)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Montagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title">Torques Rala</div>
+                                    <table class="table">
+                                        <thead style="background-color:white;">
+                                            <tr>
+                                                <th style="width: 50mm; text-align:center;">Id Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Ângulo</th>
+                                                <th style="width: 60mm; text-align: center;">Operador</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for (int j = 0; j < 20; j++)
+                                            {
+                                                auxIndexTorqueRala = indexTorqueRala;
+                                                auxIndexTorqueRala++;
+
+                                                <tr>                                                                                                      
+                                                    <td style="width: 50mm; text-align: center; ">@auxIndexTorqueRala</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Torque</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Angulo</td>
+                                                    <td style="width: 60mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Operador</td>
+                                                </tr>
+
+                                                indexTorqueRala++;
+                                            }
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        }
+
+                        if (torquesExtraRala > 0)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Montagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title">Torques Rala</div>
+                                    <table class="table">
+                                        <thead style="background-color:white;">
+                                            <tr>
+                                                <th style="width: 50mm; text-align:center;">Id Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Torque</th>
+                                                <th style="width: 40mm; text-align: center;">Ângulo</th>
+                                                <th style="width: 60mm; text-align: center;">Operador</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for (int k = 0; k < torquesExtraRala; k++)
+                                            {
+                                                auxIndexTorqueRala = indexTorqueRala;
+                                                auxIndexTorqueRala++;
+
+                                                <tr>                                                   
+                                                    <td style="width: 50mm; text-align: center; ">@auxIndexTorqueRala</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Torque</td>
+                                                    <td style="width: 40mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Angulo</td>
+                                                    <td style="width: 60mm; text-align: center; ">@lstTorquesRala[indexTorqueRala].Operador</td>
+                                                </tr>      
+                                                
+                                                indexTorqueRala++;
+                                            }                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+
+                @if (Model.ListaInfoRastreabilidadePosto3 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 3</div>
+                                    <div class="title-posto"><b style="margin-right:5px;">Descrição: </b> Montagem do anel interno</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p3.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center;">Status</th>
+                                        <th style="width: 30mm; text-align:center; ">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; ">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto3)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.ListaInfoRastreabilidadePosto4 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 4</div>
+                                    <div class="title-posto">
+                                        <b style="margin-right:5px;">Descrição: </b> Dispositivo de acoplamento da estrutura traseira
+                                    </div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p4.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; ">Status</th>
+                                        <th style="width: 30mm; text-align:center; ">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; ">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto4)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.ListaInfoRastreabilidadePosto5 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:5px;">Posto: </b> 5</div>
+                                    <div class="title-posto">
+                                        <b style="margin-right:5px;">Descrição: </b> Dispositivo de montagem e teste final
+                                    </div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p5.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center;">Status</th>
+                                        <th style="width: 30mm; text-align:center;">Sequência</th>
+                                        <th style="width: 140mm; text-align: left;">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto5)
+                                    {
+                                        if (bllRastreabilidade.HasSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Teste Final</div>
+                            <div class="page-row-tipo-estrutura"><b style="margin-right:5px;">Objetivo: </b> Verificar e quantificar o torque suportado pela articulação</div>
+                            <div class="page-row-tipo-estrutura"><b style="margin-right:5px;">Critérios de Aprovação: </b> Velocidade Angular de 16±1 °/s e Torque de 23,3±3,5 kNm em zero grau</div>
+                           
+                            <div class="page-row-sub-title">Gráficos</div>
+                            <div class="report-title">Esquerda para Direita</div>
+                            <div class="report-legend" style="justify-content:center;">
+                                    <div class="report-legend-circle" style="background-color:limegreen; margin-left:4mm;"></div>
+                                    <div class="report-legend-text-container">
+                                        <div class="report-legend-text-content">Torque</div>
+                                    </div>
+                                    <div class="report-legend-circle" style="background-color:blue;"></div>
+                                    <div class="report-legend-text-container">
+                                        <div class="report-legend-text-content">Velocidade</div>
+                                    </div>
+                                    <div class="report-legend-circle" style="background-color:red;"></div>
+                                    <div class="report-legend-text-container">
+                                        <div class="report-legend-text-content">Limite Torque</div>
+                                    </div>
+                            </div>
+                            <div class="grafico-teste-final-container">
+                                <div class="grafico-teste-final-content" id="grafioTesteFinal1"></div>
+                            </div>
+                            <div class="report-legend">Ângulo</div>
+
+                            <div class="report-title">Direita para Esquerda</div>
+                            <div class="report-legend" style="justify-content:center;">
+                                <div class="report-legend-circle" style="background-color:limegreen; margin-left:4mm;"></div>
+                                <div class="report-legend-text-container">
+                                    <div class="report-legend-text-content">Torque</div>
+                                </div>
+                                <div class="report-legend-circle" style="background-color:blue;"></div>
+                                <div class="report-legend-text-container">
+                                    <div class="report-legend-text-content">Velocidade</div>
+                                </div>
+                                <div class="report-legend-circle" style="background-color:red;"></div>
+                                <div class="report-legend-text-container">
+                                    <div class="report-legend-text-content">Limite Torque</div>
+                                </div>
+                            </div>
+                            <div class="grafico-teste-final-container">
+                                <div class="grafico-teste-final-content" id="grafioTesteFinal2"></div>
+                            </div>
+                            <div class="report-legend">Ângulo</div>
+                        </div>
+                    </div>
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Montagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Dados do teste final em zero grau</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 60mm; text-align:center;">Descrição</th>
+                                        <th style="width: 60mm; text-align:center;">Torque</th>
+                                        <th style="width: 60mm; text-align:center;">Velocidade Angular</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaDadosZeroGrau)
+                                    {
+                                        <tr style="font-family:Arial, Helvetica, sans-serif;">
+                                            <th style="width: 60mm; text-align: center; font-size: 16px; font-weight:500;">@item.Descricao</th>
+                                            <td style="width: 60mm; text-align: center; font-size: 16px; font-weight: 500;">@item.Forca kNm</td>
+                                            <td style="width: 60mm; text-align: center; font-size: 16px; font-weight: 500;">@item.Velocidade °/s</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <div class="page-row-sub-title">Resultado</div>
+                            <div class="resultado-teste-final">@Model.ResultadoTesteFinal</div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/plotly.min.js"></script>
+    <script src="~/js/printThis.js"></script>
+    <script>
+
+        @{
+            List<double> lstForcas1 = Model.ListaForcas1;
+            List<double> lstVelocidades1 = Model.ListaVelocidades1;
+            List<double> lstAngulos1 = Model.ListaAngulos1;
+            List<double> lstForcaMaxima1 = Model.ListaForcaMaxima1;
+            List<double> lstForcaMinima1 = Model.ListaForcaMinima1;
+
+            List<double> lstForcas2 = Model.ListaForcas2;
+            List<double> lstVelocidades2 = Model.ListaVelocidades2;
+            List<double> lstAngulos2 = Model.ListaAngulos2;
+            List<double> lstForcaMaxima2 = Model.ListaForcaMaxima2;
+            List<double> lstForcaMinima2 = Model.ListaForcaMinima2;
+
+
+            var yVelocidades1 = Json.Serialize(lstVelocidades1);
+            var xAngulos1 = Json.Serialize(lstAngulos1);
+            var yForcas1 = Json.Serialize(lstForcas1);
+            var yForcaMaxima1 = Json.Serialize(lstForcaMaxima1);
+            var yForcaMinima1 = Json.Serialize(lstForcaMinima1);
+
+            var yVelocidades2 = Json.Serialize(lstVelocidades2);
+            var xAngulos2 = Json.Serialize(lstAngulos2);
+            var yForcas2 = Json.Serialize(lstForcas2);
+            var yForcaMaxima2 = Json.Serialize(lstForcaMaxima2);
+            var yForcaMinima2 = Json.Serialize(lstForcaMinima2);
+        }
+
+        var velocidadeC1 = {
+            x: @xAngulos1,
+            y: @yVelocidades1 ,
+            type: 'scatter',
+            line: {
+                color: 'rgb(0, 0, 255)',
+                width: 1.5
+            }
+        };
+
+        var forcaC1 = {
+            x: @xAngulos1,
+            y: @yForcas1,
+            type: 'scatter',
+            line: {
+                color: 'rgb(0, 255, 0)',
+                width: 1.5
+            }
+        };
+
+        var forcaMaximaC1 = {
+            x: @xAngulos1,
+            y: @yForcaMaxima1,
+            type: 'scatter',
+            line: {
+                color: 'rgb(255, 0, 0)',
+                width: 1.5
+            }
+        };
+
+        var forcaMinimaC1 = {
+            x: @xAngulos1,
+            y: @yForcaMinima1,
+            type: 'scatter',
+            line: {
+                color: 'rgb(255, 0, 0)',
+                width: 1.5
+            }
+
+        };
+
+        var layout = {
+            showlegend: false,
+            autosize: false,
+            width: 718,
+            height: 280,
+            hovermode: false,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 30,
+                t: 20
+            },
+            xaxis: {
+                showticklabels: true,
+                tickmode: "linear",
+                tick0: -60,
+                dtick: 10
+            }
+        };
+
+        var data = [velocidadeC1, forcaC1, forcaMinimaC1, forcaMaximaC1];
+
+        Plotly.newPlot('grafioTesteFinal1', data, layout, { displayModeBar: false });
+
+
+        var velocidadeC2 = {
+            x: @xAngulos2,
+            y: @yVelocidades2 ,
+            type: 'scatter',
+            line: {
+                color: 'rgb(0, 0, 255)',
+                width: 1.5
+            }
+        };
+
+        var forcaC2 = {
+            x: @xAngulos2,
+            y: @yForcas2,
+            type: 'scatter',
+            line: {
+                color: 'rgb(0, 255, 0)',
+                width: 1.5
+            }
+        };
+
+        var forcaMaximaC2 = {
+            x: @xAngulos2,
+            y: @yForcaMaxima2,
+            type: 'scatter',
+            line: {
+                color: 'rgb(255, 0, 0)',
+                width: 1.5
+            }
+        };
+
+        var forcaMinimaC2 = {
+            x: @xAngulos2,
+            y: @yForcaMinima2,
+            type: 'scatter',
+            line: {
+                color: 'rgb(255, 0, 0)',
+                width: 1.5
+            }
+        };
+
+        var layout = {
+            showlegend: false,
+            autosize: false,
+            width: 718,
+            height: 280,
+            hovermode: false,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 30,
+                t: 20
+            },
+            xaxis: {
+                showticklabels: true,
+                tickmode: "linear",
+                tick0: -60,
+                dtick: 10
+            }
+        };
+
+        var data = [velocidadeC2, forcaC2, forcaMinimaC2, forcaMaximaC2];
+
+        Plotly.newPlot('grafioTesteFinal2', data, layout, { displayModeBar: false });
+
+        $(document).ready(function () {
+
+            $("#btnPDF").click(function () {
+                $(".relatorio-page-content").printThis({
+                    importCSS: true,
+                    importStyle: true,
+                    header: null,
+                    footer: true,
+                    canvas: true
+                });
+            });
+        });
+
+    </script>
+}
+
+

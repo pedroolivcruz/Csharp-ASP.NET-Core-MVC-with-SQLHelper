@@ -1,0 +1,101 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <title>Novo</title>
+    <link rel="stylesheet" href="~/css/Novo_Cadastro.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Novo Usuário
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "Usuarios", new { m = ViewBag.Matricula, p = ViewBag.Permissao, n = ViewBag.Nome })'" />
+            </div>
+        </div>
+
+        <div class="cadastro-container">
+            <form action="cadastrar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+
+                <input name="matriculaPesquisada" value="@ViewBag.Matricula" type="hidden"/>
+                <input name="permissaoPesquisada" value="@ViewBag.Permissao" type="hidden" />
+                <input name="nomePesquisado" value="@ViewBag.Nome" type="hidden" />
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Matrícula
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="matricula" type="number" class="parametro" min="0" required autofocus autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Logon
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="logon" type="text" class="parametro" required autocomplete="off" placeholder="Insira o logon aqui!" />
+                    </div>
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Nome
+                    </div>
+                    <div class="row-parametro-container">
+                        <textarea name="nome" type="text" class="parametro" required autocomplete="off" placeholder="Insira o nome aqui!"></textarea>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Permissão
+                    </div>
+                    <div class="row-parametro-container">
+                        <select class="parametro" name="permissao" required>
+                            <option value="0" selected>Sim</option>
+                            <option value="1">Não</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" class="button-salvar" value="Salvar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        const txHeight = 16;
+        const tx = document.getElementsByTagName("textarea");
+
+        for (let i = 0; i < tx.length; i++) {
+            if (tx[i].value == '') {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+            }
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput(e) {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        }
+    </script>
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "69",
+    "CorrenteMinima": 341.0,
+    "CorrenteMaxima": 392.0,
+    "TensaoMinima": 25.1,
+    "TensaoMaxima": 27.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "70.3",
+    "CorrenteMinima": 20.5,
+    "CorrenteMaxima": 40.6,
+    "TensaoMinima": 35.5,
+    "TensaoMaxima": 53.4
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "70.4",
+    "CorrenteMinima": 259.0,
+    "CorrenteMaxima": 298.0,
+    "TensaoMinima": 22.4,
+    "TensaoMaxima": 24.8
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "78",
+    "CorrenteMinima": 301.0,
+    "CorrenteMaxima": 347.0,
+    "TensaoMinima": 23.5,
+    "TensaoMaxima": 26.1
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "79",
+    "CorrenteMinima": 307.0,
+    "CorrenteMaxima": 354.0,
+    "TensaoMinima": 24.0,
+    "TensaoMaxima": 26.6
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "80.2",
+    "CorrenteMinima": 287.0,
+    "CorrenteMaxima": 331.0,
+    "TensaoMinima": 23.5,
+    "TensaoMaxima": 26.1
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "83",
+    "CorrenteMinima": 334.0,
+    "CorrenteMaxima": 385.0,
+    "TensaoMinima": 24.6,
+    "TensaoMaxima": 27.2
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "84",
+    "CorrenteMinima": 341.0,
+    "CorrenteMaxima": 392.0,
+    "TensaoMinima": 25.1,
+    "TensaoMaxima": 27.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "85",
+    "CorrenteMinima": 363.0,
+    "CorrenteMaxima": 418.0,
+    "TensaoMinima": 26.1,
+    "TensaoMaxima": 30.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "86",
+    "CorrenteMinima": 321.0,
+    "CorrenteMaxima": 370.0,
+    "TensaoMinima": 21.3,
+    "TensaoMaxima": 23.7
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "87",
+    "CorrenteMinima": 251.0,
+    "CorrenteMaxima": 289.0,
+    "TensaoMinima": 23.7,
+    "TensaoMaxima": 26.3
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "88",
+    "CorrenteMinima": 251.0,
+    "CorrenteMaxima": 289.0,
+    "TensaoMinima": 23.7,
+    "TensaoMaxima": 26.3
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "89",
+    "CorrenteMinima": 306.0,
+    "CorrenteMaxima": 352.0,
+    "TensaoMinima": 22.6,
+    "TensaoMaxima": 25.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "100",
+    "CorrenteMinima": 25.0,
+    "CorrenteMaxima": 50.0,
+    "TensaoMinima": 70.0,
+    "TensaoMaxima": 80.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "105",
+    "CorrenteMinima": 341.0,
+    "CorrenteMaxima": 392.0,
+    "TensaoMinima": 25.1,
+    "TensaoMaxima": 27.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "189",
+    "CorrenteMinima": 306.0,
+    "CorrenteMaxima": 352.0,
+    "TensaoMinima": 22.6,
+    "TensaoMaxima": 25.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "190",
+    "CorrenteMinima": 321.0,
+    "CorrenteMaxima": 370.0,
+    "TensaoMinima": 21.3,
+    "TensaoMaxima": 23.7
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "191",
+    "CorrenteMinima": 365.0,
+    "CorrenteMaxima": 421.0,
+    "TensaoMinima": 24.7,
+    "TensaoMaxima": 27.3
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "192",
+    "CorrenteMinima": 296.0,
+    "CorrenteMaxima": 341.0,
+    "TensaoMinima": 21.5,
+    "TensaoMaxima": 23.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "193",
+    "CorrenteMinima": 210.0,
+    "CorrenteMaxima": 243.0,
+    "TensaoMinima": 24.1,
+    "TensaoMaxima": 26.7
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "194",
+    "CorrenteMinima": 314.0,
+    "CorrenteMaxima": 362.0,
+    "TensaoMinima": 25.2,
+    "TensaoMaxima": 28.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "195",
+    "CorrenteMinima": 331.0,
+    "CorrenteMaxima": 382.0,
+    "TensaoMinima": 24.0,
+    "TensaoMaxima": 26.6
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "196",
+    "CorrenteMinima": 296.0,
+    "CorrenteMaxima": 341.0,
+    "TensaoMinima": 21.5,
+    "TensaoMaxima": 23.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "197",
+    "CorrenteMinima": 384.0,
+    "CorrenteMaxima": 442.0,
+    "TensaoMinima": 25.6,
+    "TensaoMaxima": 28.4
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "198",
+    "CorrenteMinima": 341.0,
+    "CorrenteMaxima": 392.0,
+    "TensaoMinima": 25.1,
+    "TensaoMaxima": 27.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "199",
+    "CorrenteMinima": 308.0,
+    "CorrenteMaxima": 355.0,
+    "TensaoMinima": 25.2,
+    "TensaoMaxima": 28.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "200",
+    "CorrenteMinima": 338.0,
+    "CorrenteMaxima": 389.0,
+    "TensaoMinima": 24.8,
+    "TensaoMaxima": 27.6
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "201",
+    "CorrenteMinima": 363.0,
+    "CorrenteMaxima": 418.0,
+    "TensaoMinima": 26.1,
+    "TensaoMaxima": 28.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "202",
+    "CorrenteMinima": 363.0,
+    "CorrenteMaxima": 418.0,
+    "TensaoMinima": 26.1,
+    "TensaoMaxima": 28.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "203",
+    "CorrenteMinima": 363.0,
+    "CorrenteMaxima": 418.0,
+    "TensaoMinima": 26.1,
+    "TensaoMaxima": 28.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "204",
+    "CorrenteMinima": 338.0,
+    "CorrenteMaxima": 389.0,
+    "TensaoMinima": 24.8,
+    "TensaoMaxima": 27.6
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "205",
+    "CorrenteMinima": 331.0,
+    "CorrenteMaxima": 382.0,
+    "TensaoMinima": 24.0,
+    "TensaoMaxima": 30.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "206",
+    "CorrenteMinima": 321.0,
+    "CorrenteMaxima": 370.0,
+    "TensaoMinima": 21.3,
+    "TensaoMaxima": 23.7
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "207",
+    "CorrenteMinima": 296.0,
+    "CorrenteMaxima": 341.0,
+    "TensaoMinima": 21.5,
+    "TensaoMaxima": 23.9
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "208",
+    "CorrenteMinima": 296.0,
+    "CorrenteMaxima": 341.0,
+    "TensaoMinima": 21.5,
+    "TensaoMaxima": 60.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "209",
+    "CorrenteMinima": 365.0,
+    "CorrenteMaxima": 421.0,
+    "TensaoMinima": 24.7,
+    "TensaoMaxima": 27.3
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "210",
+    "CorrenteMinima": 314.0,
+    "CorrenteMaxima": 362.0,
+    "TensaoMinima": 25.2,
+    "TensaoMaxima": 28.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "211",
+    "CorrenteMinima": 321.0,
+    "CorrenteMaxima": 370.0,
+    "TensaoMinima": 21.3,
+    "TensaoMaxima": 23.7
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "260",
+    "CorrenteMinima": 34.0,
+    "CorrenteMaxima": 343.0,
+    "TensaoMinima": 34.0,
+    "TensaoMaxima": 34.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "261",
+    "CorrenteMinima": 336.0,
+    "CorrenteMaxima": 387.0,
+    "TensaoMinima": 23.6,
+    "TensaoMaxima": 26.2
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "262",
+    "CorrenteMinima": 239.0,
+    "CorrenteMaxima": 275.0,
+    "TensaoMinima": 30.0,
+    "TensaoMaxima": 35.0
+  },
+  {
+    "DoubleCodigoEps": 0.0,
+    "StringCodigoEps": "70.6",
+    "CorrenteMinima": 60.0,
+    "CorrenteMaxima": 60.0,
+    "TensaoMinima": 60.0,
+    "TensaoMaxima": 60.0
+  }
+]

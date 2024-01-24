@@ -1,0 +1,174 @@
+﻿table.dataTable {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both
+}
+
+    .dataTables_wrapper .dataTables_length {
+        display: none;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        display: none;
+    }
+
+        .dataTables_wrapper .dataTables_filter input {
+            display: none;
+        }
+
+    .dataTables_wrapper .dataTables_info {
+        display: none;
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+        justify-content: center;
+        display: flex;
+        width: calc(100% + 1px);
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        height: 50px;
+        position: sticky;
+        bottom: 0px;
+        left:0px;
+        background-color: ghostwhite;
+        z-index: 5;
+        -webkit-appearance: none;
+    }
+
+    .dataTables_wrapper .paginate_button {
+        box-sizing: border-box;
+        display: inline-block;
+        min-width: 1.5em;
+        padding: .5em 1em;
+        margin-left: 5px;
+        text-align: center;
+        text-decoration: none !important;
+        color: black;
+        border: none;
+        border-radius: 5px;
+    }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+                color: orange;
+                border: none;
+                font-weight: 700;
+            }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                color: white;
+                border: none;
+                background-image: linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                background-image: -moz-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                background-image: -webkit-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                font-weight: 700;
+            }
+
+            .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+                outline: none;
+                background-image: linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                background-image: -moz-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                background-image: -webkit-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+                font-weight: 700;
+            }
+
+/*
+.table.dataTable thead th {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: 18px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+    border: none;
+    vertical-align: central;
+    background-color:ghostwhite;
+}
+
+.table.dataTable tbody tr {
+    border-bottom: 5px solid ghostwhite;
+    vertical-align: central;
+    background-color: white;
+}
+
+    .table.dataTable tbody tr:nth-child(even) {
+        background-color: white;
+    }
+
+.table.dataTable tbody:last-child {
+    margin-bottom: 30px;
+}
+
+.table.dataTable thead {
+    position: sticky;
+    top: 0px;
+}
+
+.table.dataTable td {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    height:70px;
+    font-family: Arial, Helvetica, sans-serif;
+    object-fit: scale-down;
+    vertical-align: central;
+}
+    
+
+@media screen and (max-width: 1300px) {
+
+    .table.dataTable {
+        margin-left: 30px;
+        width: calc(100% - 60px);
+        background-color: transparent;
+    }
+
+        .table.dataTable thead tr {
+            display: none;
+        }
+
+        .table.dataTable tr {
+            display: block;
+            border-radius: 15px;
+            padding-top:10px;
+        }
+
+            .table.dataTable tr + tr {
+                margin-top: 30px;
+            }
+
+
+        .table.dataTable td {
+            border: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            margin-top: 12px;
+        }
+
+            .table.dataTable td:first-of-type {
+                margin-top: 10px;
+            }
+
+            .table.dataTable td:before {
+                content: ' ';
+                content: attr(data-label);
+                display: flex;
+                justify-content: left;
+                font-weight: bold;
+                width: 120px;
+                min-width: 120px;
+                background-color: transparent;
+
+            }
+}*/

@@ -1,0 +1,154 @@
+﻿
+
+.page-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+    background-image: -moz-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+    background-image: -webkit-linear-gradient(to top,rgb(8,28,108), rgb(28,58,138));
+}
+
+
+.row-title-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-top: calc((100vh - 290px)/2);
+}
+
+.row-matricula-container {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: calc((100% - 300px)/2);
+}
+
+.row-input-container {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    margin-left: calc((100% - 300px)/2);
+}
+
+.input {
+    height: 45px;
+    width: 300px;
+    background-color: rgb(8,28,108);
+    padding:0px;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+/* INPUTS */
+input:focus {
+    outline: none;
+}
+
+
+.row-buttons-container {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.button-entrar {
+    width: 105px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: calc((100% - 240px)/2);
+}
+
+    .button-entrar:hover {
+        color: rgb(28,58,138);
+        background-color: white;
+    }
+
+
+.button-voltar {
+    width: 105px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+    .button-voltar:hover {
+        color: rgb(28,58,138);
+        background-color: white;
+    }
+
+button:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

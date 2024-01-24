@@ -1,0 +1,275 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+@model Conectasys.Portal.Models.ChecklistSoldagemInfo
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/Novo_Cadastro.css"/>
+    <title>Editar</title>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Editar Checklist
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "ChecklistsSoldagem", new { p =  ViewBag.ParametroBusca })'" />
+            </div>
+        </div>
+
+        <div class="cadastro-container">
+            <form action="editar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+
+                <input name="postoPesquisa" value="@ViewBag.ParametroBusca" style="display:none;" />
+                <input name="idChecklist" value="@Model.IdChecklist" style="display:none;" />
+                <input type="text" name="stringFotoAntiga" value="@Model.StringFoto" style="display:none;" />
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Posto
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="posto" class="parametro" id="slctPosto" autofocus required autocomplete="off">
+                            @switch (Model.Posto)
+                            {
+
+                                case 1:
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    break;
+
+                                case 2:
+                                    <option>1</option>
+                                    <option selected>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    break;
+
+                                case 3:
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option selected>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    break;
+
+                                case 4:
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option selected>4</option>
+                                    <option>5</option>
+                                    break;
+
+                                case 5:
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option selected>5</option>
+                                    break;
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Sequência
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="sequencia" type="number" class="parametro" min="0" value="@Model.Sequencia" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Descrição
+                    </div>
+                    <div class="row-parametro-container">
+                        <textarea name="descricao" class="parametro" style="height:auto;" required autautocomplete="off" placeholder="Insira a descrição aqui!">@Model.Descricao</textarea>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Ler Etiqueta
+                    </div>
+                    <div class="row-parametro-container">
+                        <select class="parametro" name="lerEtiqueta" required autocomplete="off">
+                            @if (Model.LerEtiqueta == true)
+                            {
+                                <option selected value="true">Sim</option>
+                                <option value="false">Não</option>
+                            }
+                            else
+                            {
+                                <option value="true">Sim</option>
+                                <option selected value="false">Não</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Gerar Rastreabilidade
+                    </div>
+                    <div class="row-parametro-container">
+                        <select class="parametro" name="gerarRastreabilidade" required autocomplete="off">
+                            @if (Model.GerarRastreabilidade == true)
+                            {
+                                <option selected value="true">Sim</option>
+                                <option value="false">Não</option>
+                            }
+                            else
+                            {
+                                <option value="true">Sim</option>
+                                <option selected value="false">Não</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Tipo Confirmação
+                    </div>
+                    <div class="row-parametro-container">
+                        <select class="parametro" name="tipoConfirmacao" required autocomplete="off">
+                            @if (Model.TipoConfirmacao == true)
+                            {
+                                <option selected value="true">Automática</option>
+                                <option value="false">Manual</option>
+                            }
+                            else
+                            {
+                                <option value="true">Automática</option>
+                                <option selected value="false">Manual</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Valor de Confirmação
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="numConfirmacao" type="number" class="parametro" min="0" value="@Model.ValorConfirmacao" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Foto
+                    </div>
+                    <div class="row-parametro-container">
+                        <label class="picture" for="picture-input">
+                            <span class="picture-image">
+                                <img src="@Model.StringFoto" class="picture-img" id="image" />
+                            </span>
+                        </label>
+                        <input type="file" name="file" id="picture-input" accept="image/png, image/gif, image/jpeg, image/ico, image/PDF" autocomplete="off">
+                    </div>
+                </div>
+            
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Ativo
+                    </div>
+                    <div class="row-parametro-container">
+                        <select class="parametro" name="ativo" required autocomplete="off">
+                            @if (Model.Ativo == true)
+                            {
+                                <option selected value="true">Sim</option>
+                                <option value="false">Não</option>
+                            }
+                            else
+                            {
+                                <option value="true">Sim</option>
+                                <option selected value="false">Não</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" class="button-salvar" value="Salvar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        const inputFile = document.querySelector("#picture-input");
+        const pictureImage = document.querySelector(".picture-image");
+
+        inputFile.addEventListener("change", function (e) {
+            const inputTarget = e.target;
+            const file = inputTarget.files[0];
+
+            $(".picture-image").css("padding", "20px");
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.addEventListener("load", function (e) {
+                    const readerTarget = e.target;
+
+                    const img = document.createElement("img");
+                    img.src = readerTarget.result;
+                    img.classList.add("picture-img");
+
+                    pictureImage.innerHTML = "";
+                    pictureImage.appendChild(img);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                pictureImage.innerHTML = pictureImageTxt;
+            }
+        });
+
+        const txHeight = 16;
+        const tx = document.getElementsByTagName("textarea");
+
+        for (let i = 0; i < tx.length; i++) {
+            if (tx[i].value == '') {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+            }
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput(e) {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        }
+
+    </script>
+}

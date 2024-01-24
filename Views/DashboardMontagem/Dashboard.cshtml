@@ -1,0 +1,510 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model dynamic
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8 , user-scalable=no, minimal-ui" />
+    <link rel="stylesheet" href="~/css/Dashboards.css" />
+    <title>Consulta Teste Final</title>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Consulta Teste Final
+            </div>
+        </div>
+
+        <form action="pesquisar" method="post" onsubmit="Submit()">
+            <div class="barra-pesquisa-container">
+                <div class="barra-pesquisa-content">
+                    <div class="parametro-container">
+                        <div class="parametro-content">
+                            <div class="parametro-title">
+                                Rastreabilidade
+                            </div>
+                            <div class="input-content">
+                                <input name="rastreabilidade" class="input" required autocomplete="off" value="@Model.Rastreabilidade" autofocus/> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-pesquisar-container">
+                    <input type="submit" class="button-pesquisar" value="Pesquisar" />
+                </div>
+            </div>
+        </form>
+
+        <div class="button-filtros-container">
+            <input class="button-filtros" type="button" value="Expandir" />
+        </div>
+
+        <div class="dashboard-container">
+            <div class="rastreabilidade-info-container">
+                <div class="status-rastreabilidade-container">
+                    @if (Model.ResultadoTesteFinal == "Peça Aprovada")
+                    {
+                        <div class="status-aprovado-content">
+                            APROVADO
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="status-reprovado-content">
+                            REPROVADO
+                        </div>
+                    }
+                </div>
+                <div class="rastreabilidade-info-content">
+                    RASTREABILIDADE - @Model.Rastreabilidade
+                </div>
+            </div>
+            <div class="dashboard-content">            
+                <div class="graphic-container">
+                    <div class="graphic-header-container">
+                        <div class="graphic-header-content">
+                            Direita para Esquerda
+                        </div>
+                        <div class="dashboard-button-container">
+                            <button class="dashboard-button" id="btnTrocar">Trocar</button>
+                        </div>
+                    </div>
+                    <div class="graphic-content">
+                        <div class="first-graphic-container">
+                            <div class="graphic" id="grafico1"></div>
+                        </div>
+                        <div class="second-graphic-container">
+                            <div class="graphic" id="grafico2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header-container">
+                        <div class="table-header-content">
+                            Dados do Gráfico
+                        </div>
+                        <div class="dashboard-button-container">
+                            <button class="dashboard-button" id="btnExportar">Exportar</button>
+                        </div>
+                    </div>
+                    <div class="table-content">
+                        <div class="first-table-container">
+                            <table class="table" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;">Ângulo</th>
+                                        <th style="text-align:center;">Velocidade</th>
+                                        <th style="text-align:center;">Torque</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaGrafico1)
+                                    {
+                                        if (item.Angulo >= 0 && item.Angulo < 1 && Model.ResultadoTesteFinal == "Peça Aprovada")
+                                        {
+                                            <tr style="background-color:lightgreen;">
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                        else if (item.Angulo >= 0 && item.Angulo < 1 && Model.ResultadoTesteFinal != "Peça Aprovada")
+                                        {
+                                            <tr style="background-color:lightcoral;">
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="second-table-container">
+                            <table class="table" id="table2">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;">Ângulo</th>
+                                        <th style="text-align:center;">Velocidade</th>
+                                        <th style="text-align:center;">Torque</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaGrafico2)
+                                    {
+                                        if (item.Angulo >= 0 && item.Angulo < 1 && Model.ResultadoTesteFinal == "Peça Aprovada")
+                                        {
+                                            <tr style="background-color:lightgreen;">
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                        else if (item.Angulo >= 0 && item.Angulo < 1 && Model.ResultadoTesteFinal != "Peça Aprovada")
+                                        {
+                                            <tr style="background-color:lightcoral;">
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td data-label="Ângulo">
+                                                    <div class="flex-td">
+                                                        @item.Angulo
+                                                    </div>
+                                                </td>
+                                                <td data-label="Velocidade">
+                                                    <div class="flex-td">
+                                                        @item.Velocidade
+                                                    </div>
+                                                </td>
+                                                <td data-label="Torque">
+                                                    <div class="flex-td">
+                                                        @item.Forca
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+
+    @{
+        List<double> lstForcas1 = Model.ListaForcas1;
+        List<double> lstVelocidades1 = Model.ListaVelocidades1;
+        List<double> lstAngulos1 = Model.ListaAngulos1;
+
+        List<double> lstForcas2 = Model.ListaForcas2;
+        List<double> lstVelocidades2 = Model.ListaVelocidades2;
+        List<double> lstAngulos2 = Model.ListaAngulos2;
+
+        var rastreabilidade = Json.Serialize(Model.Rastreabilidade);
+
+        var yForcaMinima = Json.Serialize(Model.ForcaMinima);
+        var yForcaMaxima = Json.Serialize(Model.ForcaMaxima);
+
+        var yVelocidades1 = Json.Serialize(lstVelocidades1);
+        var xAngulos1 = Json.Serialize(lstAngulos1);
+        var yForcas1 = Json.Serialize(lstForcas1);
+
+        var yVelocidades2 = Json.Serialize(lstVelocidades2);
+        var xAngulos2 = Json.Serialize(lstAngulos2);
+        var yForcas2 = Json.Serialize(lstForcas2);
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/apexcharts.js"></script>
+    <script src="~/js/jquery.table2excel.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btnTrocar").on("click", function () {
+                if ($(".first-graphic-container").css("z-index") == "20") {
+                    $(".first-graphic-container").css("z-index", "10");
+                    $(".second-graphic-container").css("z-index", "20");
+                    $(".graphic-header-content").text("Esquerda para Direita");
+                    $(".first-table-container").css("z-index", "10");
+                    $(".second-table-container").css("z-index", "20");
+                }
+                else{
+                    $(".second-graphic-container").css("z-index", "10");
+                    $(".first-graphic-container").css("z-index", "20");
+                    $(".graphic-header-content").text("Direita para Esquerda");
+                    $(".second-table-container").css("z-index", "10");
+                    $(".first-table-container").css("z-index", "20");
+                }
+            });
+
+            $("#btnExportar").on("click", function () {
+                if ($(".first-graphic-container").css("z-index") == "20") {
+                    $("#table1").table2excel({
+                        exclude: ".noExl",
+                        name: "Teste Final " + @rastreabilidade + " - Direita para Esquerda",
+                        filename: "Teste Final " + @rastreabilidade + " - Direita para Esquerda",
+                        fileext: ".xls" 
+                    });
+                }
+                else {
+                    $("#table2").table2excel({
+                        exclude: ".noExl",
+                        name: "Teste Final " + @rastreabilidade + " - Esquerda para Direita",
+                        filename: "Teste Final " + @rastreabilidade + " - Esquerda para Direita",
+                        fileext: ".xls" 
+                    });  
+                }
+            });
+
+            $(".button-filtros").on("click", function () {
+                if ($(".barra-pesquisa-container").css("visibility") == "hidden") {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".dashboard-container").css("height", "calc(100% - 236px)");
+                    $(".button-filtros").val("Reduzir");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".dashboard-container").css("height", "calc(100% - 126px)");
+                    $(".button-filtros").val("Expandir");
+                }
+            });
+
+            window.addEventListener('resize', function (event) {
+                if ($(window).width() > 1375) {
+                    $(".barra-pesquisa-container").css("visibility", "visible");
+                    $(".barra-pesquisa-container").css("height", "auto");
+                    $(".button-filtros-container").css("opacity", "0");
+                    $(".button-filtros-container").css("height", "0px");
+                    $(".dashboard-container").css("height", "calc(100% - 160px)");
+                }
+                else {
+                    $(".barra-pesquisa-container").css("visibility", "hidden");
+                    $(".barra-pesquisa-container").css("height", "0px");
+                    $(".button-filtros-container").css("opacity", "1");
+                    $(".button-filtros-container").css("height", "36px");
+                    $(".dashboard-container").css("height", "calc(100% - 126px)");
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+
+        var options1 = {
+            series: [{
+                name:"Torque",
+                data: @yForcas1,
+                color: "rgb(255,0,0)"
+            },
+            {       
+                name:"Velocidade",
+                data: @yVelocidades1,
+                color: "rgb(0,0,255)"
+            }],
+            chart: {
+                type: 'line',
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enable: false
+                },
+                animations: {
+                    enabled: false
+                }
+            },
+            stroke: {
+                width: 2,
+                curve: 'smooth'
+            },
+            xaxis: {
+                categories:@xAngulos1,
+                labels: {
+                    show: false
+                }
+            },
+            yaxis: {
+                min: 0,
+                max: 28,
+                tickAmount: 10,
+                labels: {
+                    show: true
+                }
+            },
+            grid: {
+                show: false
+            },
+            annotations: {
+                position: 'top',
+                yaxis: [{
+                    y: @yForcaMinima,
+                    y2: @yForcaMaxima,
+                    borderColor: '#FFF',
+                    fillColor: 'rgb(0,255,0)',
+                    opacity: 0.5,
+                    label: {
+                        text: 'Limite Torque',
+                        position: 'right'
+                    }
+                }]
+            },
+            legend: 
+            {
+                show:true,
+                position: 'top'
+            }
+        };
+
+        var options2 = {
+            series: [{
+                name: "Torque",
+                data: @yForcas2,
+                color: "rgb(255,0,0)"
+            },
+            {
+                name: "Velocidade",
+                data: @yVelocidades2,
+                color: "rgb(0,0,255)"
+            }],
+            chart: {
+                type: 'line',
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enable: false
+                },
+                animations: {
+                    enabled: false
+                }
+            },
+            stroke: {
+                width: 2,
+                curve: 'smooth'
+            },
+            xaxis: {
+                categories: @xAngulos2,
+                labels: {
+                    show: false
+                }
+            },
+            yaxis: {
+                min:0,
+                max:28,
+                tickAmount: 10,
+                labels: {
+                    show: true
+                }
+            },
+            grid: {
+                show: false
+            },
+            annotations: {
+                position: 'top',
+                yaxis: [{
+                    y: @yForcaMinima,
+                    y2: @yForcaMaxima,
+                    borderColor: '#FFF',
+                    fillColor: 'rgb(0,255,0)',
+                    opacity: 0.5,
+                    label:{
+                        text:'Limite Torque',
+                        position:'right'
+                    }
+                }]
+            },
+            legend:
+            {
+                show: true,
+                position: 'top'
+            }
+        };
+
+        var chart1 = new ApexCharts(document.getElementById("grafico1"), options1);
+        chart1.render();
+
+        var chart2 = new ApexCharts(document.getElementById("grafico2"), options2);
+        chart2.render();
+
+    </script>
+}

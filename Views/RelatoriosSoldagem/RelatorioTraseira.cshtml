@@ -1,0 +1,701 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+@using Conectasys.Portal.Models;
+@using Conectasys.Portal.BLL;
+@using Newtonsoft.Json;
+@model dynamic
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/Relatorios.css" />
+    <title>Relatório Soldagem Traseira</title>
+</head>
+<body>
+    
+    <div class="header-container">
+        <div class="header-content">
+            Relatório Soldagem
+        </div>
+        <div class="button-header-container">
+            <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosSoldagem", new { r = Model.RastreabilidadePesquisa, dI = Model.DataInicio, dF =  Model.DataFim })'" />
+        </div>
+    </div>
+
+    <div class="barra-pesquisa-container">
+        <button id="btnPDF" class="button-pdf">Gerar PDF</button>
+    </div>
+    <div class="relatorio-container">
+        @{
+            if (Model.ListaInfoRastreabilidade != null)
+            {
+                BllRastreabilidadeSoldagem bllRastreabilidade = new BllRastreabilidadeSoldagem();
+                int indexCordoes = 0;
+
+                <div class="relatorio-page">
+                    <div class="relatorio-page-content">
+                        <div class="relatorio-page-header-container">
+                            <div class="relatorio-page-header">Relatório Soldagem</div>
+                            <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                        </div>
+                        <div class="page-row-sub-title">Rastreabilidade: @Model.CodigoRastreabilidade</div>
+                        <div class="page-row-tipo-estrutura"><b style="margin-right:10px;">Descrição do Componente:</b> Estrutura Traseira</div>
+                        <div class="page-row-tipo-estrutura"><b style="margin-right:10px;">Status: </b> @Model.StatusRastreabilidade</div>
+                        <img class="page-row-foto-estrutura-container" src="~/resources/Estrutua_Traseira.jpeg" />
+                        <div class="page-row-sub-title">Histórico de Rastreabilidade</div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Posto</th>
+                                    <th>Data Início</th>
+                                    <th>Data Fim</th>
+                                    <th>Operador</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ListaInfoRastreabilidade)
+                                {
+                                    <tr>
+                                        <td>@item.Posto</td>
+                                        <td>@item.DataInicio</td>
+                                        <td>@item.DataFim</td>
+                                        <td>@item.Operador</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                if (Model.ListaInfoRastreabilidadePosto2 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto" style="border-bottom:1px black solid;">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:10px;">Posto:</b> 2</div>
+                                    <div class="title-posto"><b style="margin-right:10px;">Descrição:</b> Pré-montagem miolo estrutura traseira</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p2s.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; font-size: 18px;">Status</th>
+                                        <th style="width: 30mm; text-align:center; font-size:18px;">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; font-size: 18px;">Descrição</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto2)
+                                    {
+
+                                        if (bllRastreabilidade.ExisteSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left;  font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+
+                if (Model.ListaInfoRastreabilidadePosto3 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto" style="border-bottom:1px black solid;">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:10px;">Posto:</b> 3</div>
+                                    <div class="title-posto"><b style="margin-right:10px;">Descrição:</b> Dispositivo de soldagem de componentes</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p3s.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; font-size: 18px;">Status</th>
+                                        <th style="width: 30mm; text-align:center; font-size:18px">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; font-size: 18px;">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto3)
+                                    {
+                                        if (bllRastreabilidade.ExisteSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    if (Model.QuantidadePaginasCordoesPosto3 > 0)
+                    {
+                        for (int i = 0; i < Model.QuantidadePaginasCordoesPosto3; i++)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Soldagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title"><b style="margin-right:10px;">Posto:</b> 3</div>
+
+                                    @for (int j = 0; j < 4; j++)
+                                    {
+                                        <div class="page-row-cordao">
+                                            <div class="page-row-info-cordao">
+                                                <div class="page-row-dados-cordao">
+                                                    <div class="dados-cordao-container">
+                                                        <div class="title-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:left;">
+                                                                Weld ID: @Model.ListaInfoGraficosPosto3[indexCordoes].cordao
+                                                            </div>
+                                                        </div>
+                                                        <div class="eps-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
+                                                                EPS: @Model.ListaInfoGraficosPosto3[indexCordoes].codigoEps
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="row-foto-cordao" src=" @Model.ListaInfoGraficosPosto3[indexCordoes].stringFoto" />
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Corrente</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Corrente</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoCorrente + @Model.ListaInfoGraficosPosto3[indexCordoes].cordao"></div>
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Tensão</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Tensão</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoTensao + @Model.ListaInfoGraficosPosto3[indexCordoes].cordao"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        indexCordoes++;
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        if (Model.QuantidadeExtraCordoesPosto3 > 0)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Soldagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title"><b style="margin-right:10px;">Posto:</b> 3</div>
+
+                                    @for (int j = 0; j < Model.QuantidadeExtraCordoesPosto3; j++)
+                                    {
+                                        <div class="page-row-cordao">
+                                            <div class="page-row-info-cordao">
+                                                <div class="page-row-dados-cordao">
+                                                    <div class="dados-cordao-container">
+                                                        <div class="title-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:left;">
+                                                                Weld ID: @Model.ListaInfoGraficosPosto3[indexCordoes].cordao
+                                                            </div>
+                                                        </div>
+                                                        <div class="eps-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
+                                                                EPS: @Model.ListaInfoGraficosPosto3[indexCordoes].codigoEps
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="row-foto-cordao" src=" @Model.ListaInfoGraficosPosto3[indexCordoes].stringFoto" />
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Corrente</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Corrente</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoCorrente + @Model.ListaInfoGraficosPosto3[indexCordoes].cordao"></div>
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Tensão</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Tensão</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoTensao + @Model.ListaInfoGraficosPosto3[indexCordoes].cordao"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        indexCordoes++;
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+
+                if (Model.ListaInfoRastreabilidadePosto4 != null)
+                {
+                    <div class="relatorio-page">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Informações do Posto</div>
+                            <div class="page-row-info-posto" style="border-bottom:1px black solid;">
+                                <div class="page-row-dados-posto">
+                                    <div class="title-posto"><b style="margin-right:10px;">Posto:</b> 4</div>
+                                    <div class="title-posto"><b style="margin-right:10px;">Descrição:</b> Montagem e soldagem da estrutura traseira</div>
+                                </div>
+                                <img class="page-row-foto-posto" src="~/resources/p4s.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relatorio-page" data-url="div9">
+                        <div class="relatorio-page-content">
+                            <div class="relatorio-page-header-container">
+                                <div class="relatorio-page-header">Relatório Soldagem</div>
+                                <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                            </div>
+                            <div class="page-row-sub-title">Checklists Realizados</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 20mm; text-align: center; font-size: 18px;">Status</th>
+                                        <th style="width: 30mm; text-align:center; font-size:18px;">Sequência</th>
+                                        <th style="width: 140mm; text-align: left; font-size: 18px;">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ListaChecklistsPosto4)
+                                    {
+                                        if (bllRastreabilidade.ExisteSequenciaChecklist(Model.CodigoRastreabilidade, item.Posto, item.Sequencia))
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/checked.png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td style="width: 20mm; text-align: center;">
+                                                    <img src="~/resources/desmarcado (1).png" />
+                                                </td>
+                                                <td style="width: 30mm; text-align: center; font-size: 16px;">@item.Sequencia</td>
+                                                <td style="width: 140mm; text-align: left; font-size: 16px;">@item.Descricao</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    indexCordoes = 0;
+
+                    if (Model.QuantidadePaginasCordoesPosto4 > 0)
+                    {
+                        for (int i = 0; i < Model.QuantidadePaginasCordoesPosto4; i++)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Soldagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title"><b style="margin-right:10px;">Posto:</b> 4</div>
+
+                                    @for (int j = 0; j < 4; j++)
+                                    {
+                                        <div class="page-row-cordao">
+                                            <div class="page-row-info-cordao">
+                                                <div class="page-row-dados-cordao">
+                                                    <div class="dados-cordao-container">
+                                                        <div class="title-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:left;">
+                                                                Weld ID: @Model.ListaInfoGraficosPosto4[indexCordoes].cordao
+                                                            </div>
+                                                        </div>
+                                                        <div class="eps-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
+                                                                EPS: @Model.ListaInfoGraficosPosto4[indexCordoes].codigoEps
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="row-foto-cordao" src=" @Model.ListaInfoGraficosPosto4[indexCordoes].stringFoto" />
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Corrente</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Corrente</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoCorrente + @Model.ListaInfoGraficosPosto4[indexCordoes].cordao"></div>
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Tensão</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Tensão</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoTensao + @Model.ListaInfoGraficosPosto4[indexCordoes].cordao"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        indexCordoes++;
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        if (Model.QuantidadeExtraCordoesPosto4 > 0)
+                        {
+                            <div class="relatorio-page">
+                                <div class="relatorio-page-content">
+                                    <div class="relatorio-page-header-container">
+                                        <div class="relatorio-page-header">Relatório Soldagem</div>
+                                        <img class="relatorio-page-logo" src="~/resources/logo-removebg-preview.png" />
+                                    </div>
+                                    <div class="page-row-sub-title"><b style="margin-right:10px;">Posto:</b> 4</div>
+
+                                    @for (int j = 0; j < Model.QuantidadeExtraCordoesPosto4; j++)
+                                    {                                       
+                                        <div class="page-row-cordao">
+                                            <div class="page-row-info-cordao">
+                                                <div class="page-row-dados-cordao">
+                                                    <div class="dados-cordao-container">
+                                                        <div class="title-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:left;">
+                                                                Weld ID: @Model.ListaInfoGraficosPosto4[indexCordoes].cordao
+                                                            </div>
+                                                        </div>
+                                                        <div class="eps-cordao">
+                                                            <div style="display:flex; width:100%; height:100%; align-items:center; justify-content:center;">
+                                                                EPS: @Model.ListaInfoGraficosPosto4[indexCordoes].codigoEps
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img class="row-foto-cordao" src=" @Model.ListaInfoGraficosPosto4[indexCordoes].stringFoto" />
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Corrente</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Corrente</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoCorrente + @Model.ListaInfoGraficosPosto4[indexCordoes].cordao"></div>
+                                                </div>
+
+                                                <div class="page-row-grafico-cordao-container">
+                                                    <div class="report-title" style="padding-left:5px;">Tensão</div>
+                                                    <div class="report-legend">
+                                                        <div class="report-legend-circle" style="background-color:blue; margin-left:12mm;"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Tensão</div>
+                                                        </div>
+                                                        <div class="report-legend-square" style="background-color: rgba(255,0,0,0.5);"></div>
+                                                        <div class="report-cordao-legend-text-container">
+                                                            <div class="report-legend-text-content">Eps</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grafico-cordao-content" id="graficoTensao + @Model.ListaInfoGraficosPosto4[indexCordoes].cordao"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        indexCordoes++;
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            }
+        }
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/apexcharts.js"></script>
+    <script src="~/js/printThis.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnPDF").click(function () {
+                $(".relatorio-page-content").printThis({
+                    importCSS: true,
+                    importStyle: true,
+                    header: null,
+                    footer: true,
+                    canvas: true
+                });
+            });
+        });
+    </script>
+
+    @{
+        var index = (Model.QuantidadePaginasCordoesPosto3 * 4) + Model.QuantidadeExtraCordoesPosto3 + (Model.QuantidadePaginasCordoesPosto4 * 4) + Model.QuantidadeExtraCordoesPosto4;
+    }
+
+    @for (var i = 0; i < index; i++)
+    {
+        var xDatas = Json.Serialize(Model.ListaInfoGraficos[i].sinais);
+        var yCorrente = Json.Serialize(Model.ListaInfoGraficos[i].corrente);
+        var yTensao = Json.Serialize(Model.ListaInfoGraficos[i].tensao);
+        var yCorrenteMaxima = Json.Serialize(Model.ListaInfoGraficos[i].correnteMaxima);
+        var yCorrenteMinima = Json.Serialize(Model.ListaInfoGraficos[i].correnteMinima);
+        var yTensaoMaxima = Json.Serialize(Model.ListaInfoGraficos[i].tensaoMaxima);
+        var yTensaoMinima = Json.Serialize(Model.ListaInfoGraficos[i].tensaoMinima);
+
+        <script>
+            var options1 = {
+                series: [{
+                    data: @yCorrente,
+                    color: "rgb(0,0,255)"
+                }],
+                chart: {
+                    height: 145,
+                    type: 'line',
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enable: false
+                    },
+                    animations: {
+                        enabled: false
+                    }
+                },
+                stroke: {
+                    width: 2,
+                    curve: 'smooth'
+                },
+                xaxis: {
+                    type: 'numeric',
+                    labels: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    min: 200,
+                    max: 440,
+                    tickAmount: 5,
+                    labels: {
+                        show: true,
+                        style: {
+                            cssClass: 'grafico-cordao-y-axis'
+                        }
+                    }
+                },
+                grid: {
+                    show: false
+                },
+                annotations: {
+                    position: 'back',
+                    yaxis: [{
+                        y: @yCorrenteMinima,
+                        y2: @yCorrenteMaxima,
+                        borderColor: '#FFF',
+                        fillColor: 'rgb(255,0,0)',
+                        opacity: 0.5
+                    }]
+                }
+            };
+
+            var options2 = {
+                series: [{
+                    data: @yTensao,
+                    color: "rgb(0,0,255)"
+                }],
+                chart: {
+                    height: 145,
+                    type: 'line',
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enable: false
+                    },
+                    animations: {
+                        enabled: false
+                    }
+                },
+                stroke: {
+                    width: 2,
+                    curve: 'smooth'
+                },
+                xaxis: {
+                    type: 'numeric',
+                    labels: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    min: 20,
+                    max: 30,
+                    tickAmount: 5,
+                    labels: {
+                        show: true,
+                        style: {
+                            cssClass: 'grafico-cordao-y-axis'
+                        }
+                    }
+                },
+                grid: {
+                    show: false
+                },
+                annotations: {
+                    position: 'back',
+                    yaxis: [{
+                        y: @yTensaoMinima,
+                        y2: @yTensaoMaxima,
+                        borderColor: '#FFF',
+                        fillColor: 'rgb(255,0,0)',
+                        opacity: 0.5
+                    }]
+                }
+            };
+
+            var chart1 = new ApexCharts(document.getElementById("graficoCorrente + @Model.ListaInfoGraficos[i].cordao"), options1);
+            chart1.render();
+
+            var chart2 = new ApexCharts(document.getElementById("graficoTensao + @Model.ListaInfoGraficos[i].cordao"), options2);
+            chart2.render();
+
+        </script>
+    }
+}

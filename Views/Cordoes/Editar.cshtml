@@ -1,0 +1,262 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Conectasys.Portal.Models.CordaoInfo
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <link rel="stylesheet" href="~/css/NovoCadastro.css"/>
+    <title>Editar</title>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Editar Cordão
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "Cordoes", new { p =  Model.Posto })'" />
+            </div>
+        </div>
+
+        <div class="cadastro-container">
+            <form action="editar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+
+                <input name="postoPesquisa" value="@ViewBag.Posto" style="display:none;" />
+                <input name="cordaoPesquisa" value="@ViewBag.Cordao" style="display:none;" />
+                <input name="epsPesquisa" value="@ViewBag.Eps" style="display:none;" />
+                <input type="text" name="stringFotoAntiga" value="@Model.StringFoto" style="display:none;" />
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Cordão
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="cordao" type="number" class="parametro" min="0" value="@Model.Cordao" autofocus required autocomplete="off" />
+                    </div>
+
+                </div>
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Descrição
+                    </div>
+                    <div class="row-parametro-container">
+                        <textarea name="descricao" class="parametro" style="height:auto;" required autautocomplete="off" placeholder="Insira a descrição aqui!">@Model.Descricao</textarea>
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Posto
+                    </div>
+                    <div class="row-parametro-container">
+                        <select name="posto" class="parametro" required autocomplete="off">
+                            @{
+                                switch (Model.Posto)
+                                {
+                                    case 3:
+                                        <option>Todos</option>
+                                        <option selected>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        break;
+
+                                    case 4:
+                                        <option>Todos</option>
+                                        <option>3</option>
+                                        <option selected>4</option>
+                                        <option>5</option>
+                                        break;
+
+                                    case 5:
+                                        <option>Todos</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option selected>5</option>
+                                        break;
+
+                                    default:
+                                        <option selected>Todos</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        break;
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+
+               
+                @if(Model.CodigoEps != 0)
+                {
+                    <div class="row-container">
+                        <div class="row-title-container">
+                            Tipo de Solda
+                        </div>
+                        <div class="row-parametro-container">
+                            <select id="slctTipoSolda" name="tipoSolda" class="parametro" required autocomplete="off">
+                                <option value="0" selected>Cordão</option>
+                                <option value="1">Ponto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row-container" id="eps">
+                        <div class="row-title-container">
+                            Eps
+                        </div>
+                        <div class="row-parametro-container">
+                            <select name="codigoEps" class="parametro" required autocomplete="off" >
+                                @foreach (var item in ViewBag.ListaEps)
+                                {
+                                    if (item.DoubleCodigoEps == Model.CodigoEps)
+                                    {
+                                        <option selected>@item.StringCodigoEps</option>
+                                    }
+                                    else
+                                    {
+                                        <option>@item.StringCodigoEps</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="row-container">
+                        <div class="row-title-container">
+                            Tipo de Solda
+                        </div>
+                        <div class="row-parametro-container">
+                            <select id="slctTipoSolda" name="tipoSolda" class="parametro" required autocomplete="off">
+                                <option value="0">Cordão</option>
+                                <option value="1" selected>Ponto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="hidden-row-container" id="eps">
+                        <div class="row-title-container">
+                            Eps
+                        </div>
+                        <div class="row-parametro-container">
+                            <select name="codigoEps" class="parametro" required autocomplete="off">
+                                @foreach (var item in ViewBag.ListaEps)
+                                {
+                                    if (item.DoubleCodigoEps == Model.CodigoEps)
+                                    {
+                                        <option selected>@item.StringCodigoEps</option>
+                                    }
+                                    else
+                                    {
+                                        <option>@item.StringCodigoEps</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                }
+
+                <div class="auto-height-row-container">
+                    <div class="row-title-container">
+                        Foto
+                    </div>
+                    <div class="row-parametro-container">
+                        <label class="picture" for="picture-input">
+                            <span class="picture-image">
+                                <img src="@Model.StringFoto" class="picture-img" id="image" />
+                            </span>
+                        </label>
+                        <input type="file" name="file" id="picture-input" accept="image/png, image/gif, image/jpeg, image/ico, image/PDF" autocomplete="off"/>
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" class="button-salvar" value="Salvar"/>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>
+</body>
+</html>
+
+
+@section scripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+
+           const inputFile = document.querySelector("#picture-input");
+           const pictureImage = document.querySelector("#image");
+
+           inputFile.addEventListener("change", function (e) {
+
+               const inputTarget = e.target;
+               const file = inputTarget.files[0];
+
+               $(".picture-image").css("padding", "20px");
+
+               if (file) {
+                   const reader = new FileReader();
+
+                   reader.addEventListener("load", function (e) {
+                       const readerTarget = e.target;
+                       pictureImage.src = readerTarget.result;
+                   });
+
+                   reader.readAsDataURL(file);
+               } else {
+                   pictureImage.innerHTML = pictureImageTxt;
+               }
+           });
+
+            const select = document.querySelector("#slctTipoSolda");
+
+            select.addEventListener("change", () => {
+
+                var tipoSolda = $("#slctTipoSolda").val();
+
+                if (tipoSolda == 0) {
+                    $("#eps").css("display", "flex");
+                }
+                else {
+                    $("#eps").css("display", "none");
+                }
+            });
+
+           const txHeight = 16;
+           const tx = document.getElementsByTagName("textarea");
+
+           for (let i = 0; i < tx.length; i++) {
+               if (tx[i].value == '') {
+                   tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+               } else {
+                   tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+               }
+               tx[i].addEventListener("input", OnInput, false);
+           }
+
+           function OnInput(e) {
+               this.style.height = 0;
+               this.style.height = (this.scrollHeight) + "px";
+           }
+    </script>
+}

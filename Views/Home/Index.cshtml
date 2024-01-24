@@ -1,0 +1,105 @@
+﻿@using Conectasys.Portal;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="icon" href="~/resources/icon-conectasys.ico" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/Home.css"/>
+    <link rel="stylesheet" href="~/css/Loader.css"/>
+    <link rel="stylesheet" href="~/css/Aviso.css"/>
+    <script type="module" src="~/js/Index.js"></script>
+</head>
+<body>
+
+    @if (Config.IsDemostration)
+    {
+        <div class="aviso">
+            <div class="aviso-flex">
+                Está é uma versão de demonstração, não representa o funcionamento final deste portal
+            </div>
+        </div>
+    }
+
+    <div class="page-container">
+        <div class="row-primary-title-container">
+            Rastreabilidade
+        </div>
+        <div class="row-secondary-title-container">
+            PRODUTO
+        </div>
+        <div class="row-powered-container">
+            Powered by Conectasys
+        </div>
+        <div class="row-buttons-container">
+            <button class="first-button" id="btnCadastros">Cadastros</button>
+            <button class="second-button" id="btnRelatorios">Relatórios</button>
+        </div>
+        <div class="row-buttons-container">
+            <button class="first-button" id="btnChecklists">Checklists</button>
+            <button class="second-button" id="btnDashboards">Dashboards</button>
+        </div>
+
+        <div class="left-side-bar-container" id="navCadastros">
+            <div class="exit-container">
+                <span class="exit" id="exitCadastros">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Cadastros
+            </div>
+            <input type="button" value="Componentes" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 1})'" />
+            <input type="button" value="Cordões" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 2})'" />
+            <input type="button" value="Eps" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 3})'" />
+            <input type="button" value="Foto Torques" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 4})'" />
+            <input type="button" value="Produtos" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 5})'" />
+            <input type="button" value="Usuários" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 6})'" />
+        </div>
+
+        <div class="right-side-bar-container" id="navRelatorios">
+            <div class="exit-container">
+                <span class="exit" id="exitRelatorios">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Relatórios
+            </div>
+            <input type="button" value="Montagem" class="nav-button" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosMontagem" )'" />
+            <input type="button" value="Soldagem" class="nav-button" onclick="location.href='@Url.Action("Rastreabilidades", "RelatoriosSoldagem" )'" />
+        </div>
+
+        <div class="left-side-bar-container" id="navChecklists">
+            <div class="exit-container">
+                <span class="exit" id="exitChecklists">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Checklists
+            </div>
+            <input type="button" value="Montagem" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 7})'" />
+            <input type="button" value="Soldagem" class="nav-button" onclick="location.href='@Url.Action("Login", "Verificacao",new { i = 8})'" />
+        </div>
+       
+        <div class="right-side-bar-container" id="navDashboards">
+            <div class="exit-container">
+                <span class="exit" id="exitDashboards">&times;</span>
+            </div>
+            <div class="side-bar-header">
+                Dashboards
+            </div>
+            <input type="button" value="Teste Final" class="nav-button" onclick="location.href='@Url.Action("Dashboard", "DashboardMontagem" )'" />
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="loader-container">
+            <div style="display:flex; height:100%; width:100%; align-items:center; justify-content:center;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <div class="message-container">
+            Carregando ...
+        </div>
+    </div>    
+</body>
+</html>
+

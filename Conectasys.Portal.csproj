@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+	<StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\AcessoNegado.css" />
+    <None Include="wwwroot\css\DataTable.css" />
+    <None Include="wwwroot\css\Home.css" />
+    <None Include="wwwroot\css\Layout.css" />
+    <None Include="wwwroot\css\Login.css" />
+    <None Include="wwwroot\css\Relatorios.css" />
+    <None Include="wwwroot\resources\checked.png" />
+    <None Include="wwwroot\resources\desmarcado %281%29.png" />
+    <None Include="wwwroot\resources\documento-de-texto.png" />
+    <None Include="wwwroot\resources\Estrutua_Traseira.jpeg" />
+    <None Include="wwwroot\resources\Estrutura_Frontal.jpeg" />
+    <None Include="wwwroot\resources\logo-removebg-preview.png" />
+    <None Include="wwwroot\resources\p1.png" />
+    <None Include="wwwroot\resources\p1s.png" />
+    <None Include="wwwroot\resources\p2.png" />
+    <None Include="wwwroot\resources\p2s.png" />
+    <None Include="wwwroot\resources\p3.png" />
+    <None Include="wwwroot\resources\p3s.png" />
+    <None Include="wwwroot\resources\p4.png" />
+    <None Include="wwwroot\resources\p4s.png" />
+    <None Include="wwwroot\resources\p5.png" />
+    <None Include="wwwroot\resources\p5s.png" />
+    <None Include="wwwroot\resources\seta-direita.png" />
+  </ItemGroup>
+
+</Project>

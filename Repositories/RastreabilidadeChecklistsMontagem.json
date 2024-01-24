@@ -1,0 +1,2935 @@
+[
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-07-25T09:30:35.403"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-07-25T11:39:41.433"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-07-25T10:36:31.003"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-07-25T11:27:59.330"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-07-25T15:39:27.373"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-07-25T09:31:40.313"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-07-25T11:43:27.210"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-07-25T11:39:36.823"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-07-25T11:39:35.573"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-07-25T11:36:36.363"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-07-25T15:19:10.383"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-07-25T15:19:06.257"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-07-25T15:19:08.557"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-07-25T09:24:26.573"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-07-25T08:39:02.607"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-07-25T10:34:48.323"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-07-25T11:35:52.310"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-07-25T15:18:39.077"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-07-25T10:36:33.190"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-07-25T11:27:56.120"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-07-25T09:31:40.767"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-07-25T11:36:34"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-07-25T11:36:31.233"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-07-25T09:30:35.403"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-07-25T09:30:35.403"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-07-25T15:39:23.717"
+  },
+  {
+    "Codigo": "B2230000103",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-07-25T11:27:54.807"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-07-25T09:38:45.030"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-07-25T14:31:28.960"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-07-25T14:31:37.697"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-07-25T09:39:44.897"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-07-25T09:33:58.473"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-07-25T09:21:12.787"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-07-25T14:31:11.697"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-07-25T14:31:30.320"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-07-25T14:31:32.173"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-07-25T09:39:45.367"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-07-25T09:38:45.030"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-07-25T09:38:45.030"
+  },
+  {
+    "Codigo": "B2230000203",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-07-25T14:31:31.353"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-07-26T16:14:36.940"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-07-27T09:26:15.687"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-07-27T09:26:19.953"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-07-26T16:17:05.160"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-07-26T15:56:04.200"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-07-26T15:43:36.077"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-07-27T08:09:17.117"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-07-27T09:26:16.607"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-07-27T09:26:18.937"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-07-26T16:17:06.197"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-07-26T16:14:36.940"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-07-26T16:14:36.940"
+  },
+  {
+    "Codigo": "B2230000303",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-07-27T09:26:17.780"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-07-27T10:04:59.413"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-07-27T15:33:14.367"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-07-27T14:38:12.577"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-07-27T14:38:17.207"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-08-02T13:29:36.430"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-07-27T10:06:13.463"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-07-27T15:33:17.030"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-07-27T15:33:13.773"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-07-27T15:24:34.180"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-07-27T15:22:19.173"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-08-02T13:29:35.140"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-08-02T13:29:33.843"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-08-02T13:29:34.487"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-07-27T09:55:38.757"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-07-27T09:31:05.710"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-07-27T10:19:05.047"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-07-27T15:03:38.987"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-08-02T13:29:15.103"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-07-27T14:38:13.357"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-07-27T14:38:15.390"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-07-27T10:06:14.040"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-07-27T15:06:58.423"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-07-27T15:06:49.360"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-07-27T10:04:59.413"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-07-27T10:04:59.413"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-08-02T13:29:35.837"
+  },
+  {
+    "Codigo": "B2230000403",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-07-27T14:38:14.403"
+  },
+  {
+    "Codigo": "B2230000503",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-07-29T10:07:53.500"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-02T08:41:05.487"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-02T09:57:23.800"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-02T09:38:34.113"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-02T09:38:41.643"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-09-01T15:54:54.260"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-02T08:41:26.240"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-08-02T09:57:33.703"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-02T09:57:21.270"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-02T09:57:19.597"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-02T09:57:17.673"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-09-01T15:52:17.590"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-09-01T15:52:15.513"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-09-01T15:52:16.543"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-02T08:26:09.547"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-02T08:17:28.013"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-02T08:45:31.880"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-02T09:41:58.863"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-09-01T15:48:26.870"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-02T09:38:37.080"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-02T09:38:39.363"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-02T08:41:26.537"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-02T09:57:16.237"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-02T09:57:14.613"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-02T08:41:05.487"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-02T08:41:05.487"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-09-01T15:52:18.610"
+  },
+  {
+    "Codigo": "B2231000803",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-02T09:38:38.080"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-02T11:41:15.490"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-02T14:56:30.313"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Aplicar graxa",
+    "Posto": 2,
+    "Sequencia": 9,
+    "Data": "2022-08-02T16:14:17.670"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-02T15:01:10.497"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 11,
+    "Data": "2022-08-02T16:14:22.687"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-09-02T14:20:39.890"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-02T11:41:57.140"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-08-02T14:56:31.720"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-02T14:56:28.613"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-02T14:56:26.437"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-02T14:50:30.747"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-09-02T14:18:12.027"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-09-02T14:18:10.073"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-09-02T14:18:11.120"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Instalar graxeiras",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-02T16:07:20.383"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-02T11:14:06.380"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-02T11:07:10.150"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-02T15:00:04.997"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-02T14:49:26.147"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-09-02T14:17:22.900"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar base fixa��o sensores",
+    "Posto": 2,
+    "Sequencia": 8,
+    "Data": "2022-08-02T16:07:30.877"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar buchas",
+    "Posto": 2,
+    "Sequencia": 10,
+    "Data": "2022-08-02T16:14:21.237"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar central lubrifica��o",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-02T16:07:28"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-02T11:41:57.093"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar suporte do sensor indutivo",
+    "Posto": 2,
+    "Sequencia": 7,
+    "Data": "2022-08-02T16:07:29.673"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Montar suporte sanfona",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-02T16:07:26.763"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-02T14:50:29.653"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-02T14:50:27.730"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-02T11:41:15.490"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-02T11:41:15.490"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-09-02T14:18:13.047"
+  },
+  {
+    "Codigo": "B2231000901",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-02T16:07:16.943"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-03T08:36:29.010"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-03T10:04:36.373"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Aplicar graxa",
+    "Posto": 2,
+    "Sequencia": 9,
+    "Data": "2022-08-03T11:41:25.040"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-03T09:38:04.327"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-03T09:41:12.057"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 11,
+    "Data": "2022-08-03T11:41:31.697"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-08-04T09:36:36.173"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-02T16:46:07.877"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-03T08:36:28.413"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-02T16:45:57.577"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-03T10:04:34.500"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-03T09:57:01.033"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-03T09:56:59.330"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-08-04T08:20:48.480"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-08-04T08:20:44.770"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-08-04T08:20:46.223"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Instalar graxeiras",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-03T11:41:16.073"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-03T08:35:58.073"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-02T16:39:08.737"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-03T08:44:20.383"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-03T09:56:19.417"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-08-04T08:19:26.977"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-03T09:38:06.560"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-02T16:45:54.323"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar base fixa��o sensores",
+    "Posto": 2,
+    "Sequencia": 8,
+    "Data": "2022-08-03T11:41:23.760"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar buchas",
+    "Posto": 2,
+    "Sequencia": 10,
+    "Data": "2022-08-03T11:41:27.353"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-03T09:41:09.743"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar central lubrifica��o",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-03T11:41:18.900"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-03T08:36:29.010"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar suporte do sensor indutivo",
+    "Posto": 2,
+    "Sequencia": 7,
+    "Data": "2022-08-03T11:41:20.693"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Montar suporte sanfona",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-03T11:41:17.463"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-02T16:46:06.140"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-03T09:56:58.013"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-02T16:45:51.550"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-03T09:56:56.383"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-02T16:45:49.487"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-03T08:36:29.010"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-03T08:36:29.010"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-08-04T09:36:34.187"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-03T10:50:05.943"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-03T09:38:08.157"
+  },
+  {
+    "Codigo": "B2231001202",
+    "Descricao": "Validar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 3,
+    "Data": "2022-08-02T16:43:37.280"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-03T11:17:55.537"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-03T12:58:56.397"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Aplicar graxa",
+    "Posto": 2,
+    "Sequencia": 9,
+    "Data": "2022-08-03T14:05:53.363"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-03T12:40:12.197"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-03T12:40:18.210"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 11,
+    "Data": "2022-08-03T14:42:04.637"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-09-02T14:33:47.703"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-03T08:47:30.543"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-03T11:17:54.770"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-03T08:46:26.190"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-03T12:54:21.500"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-03T12:54:19.617"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-03T12:54:17.807"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-09-02T14:21:39.050"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-09-02T14:21:35.303"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-09-02T14:21:36.957"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Instalar graxeiras",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-03T13:54:02.160"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-03T11:08:31.287"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-03T08:40:30.517"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-03T11:49:03.897"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-03T12:47:37.997"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-09-02T14:21:02.830"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-03T12:40:15.103"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-03T08:46:23.090"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar base fixa��o sensores",
+    "Posto": 2,
+    "Sequencia": 8,
+    "Data": "2022-08-03T14:05:51.237"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar buchas",
+    "Posto": 2,
+    "Sequencia": 10,
+    "Data": "2022-08-03T14:42:03.263"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-03T12:40:16.940"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar central lubrifica��o",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-03T14:05:38.140"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-03T11:17:55.537"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar suporte do sensor indutivo",
+    "Posto": 2,
+    "Sequencia": 7,
+    "Data": "2022-08-03T14:05:44.580"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Montar suporte sanfona",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-03T13:54:05.737"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-03T08:47:29.240"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-03T12:54:15.993"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-03T08:46:19.200"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-03T12:54:12.490"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-03T08:46:16.010"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-03T11:17:55.537"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-03T11:17:55.537"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-09-02T14:21:40.660"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-03T13:43:27.137"
+  },
+  {
+    "Codigo": "B2231001304",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-03T12:40:15.860"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-03T15:26:58.943"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-04T07:45:17.807"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-03T15:52:06.107"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-03T15:52:09.780"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-08-04T15:54:12.177"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-03T14:41:21.427"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-03T15:26:58.723"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-08-04T07:45:19.230"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-03T14:40:32.150"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-04T07:45:15.997"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-04T07:45:15.027"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-04T07:34:32.770"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-08-04T15:54:09.803"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-08-04T15:54:07.680"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-08-04T15:54:08.663"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-03T15:11:03.780"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-03T14:29:31.463"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-03T15:50:54.423"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-04T07:33:20.500"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-08-04T15:39:15.223"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-03T15:52:07.033"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-03T14:40:30.493"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-03T15:52:08.360"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-03T15:26:58.943"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-03T14:41:19.173"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-04T07:34:30.423"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-03T14:33:34.960"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-04T07:34:28.690"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-03T14:33:32.417"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-03T15:26:58.943"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-03T15:26:58.943"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-08-04T15:54:10.990"
+  },
+  {
+    "Codigo": "B2231001401",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-03T15:52:07.687"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-04T14:27:49.050"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-04T11:44:33.900"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-04T12:04:56.503"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-08-04T16:56:40.090"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-04T14:27:45.037"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-04T14:20:51.740"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-04T14:20:48.723"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-08-04T16:56:37.840"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-08-04T16:56:35.493"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-08-04T16:56:36.463"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-04T11:10:59.770"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-04T14:19:46.633"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-08-04T16:48:20.613"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-04T12:04:49.677"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-04T12:04:54.027"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-04T14:20:46.413"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-04T14:20:41.977"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-08-04T16:56:39.057"
+  },
+  {
+    "Codigo": "B2231001701",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-04T12:04:51.747"
+  },
+  {
+    "Codigo": "B2231001801",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-05T08:51:49.860"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-25T08:45:05.557"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-25T08:45:05.193"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-05T10:11:20.377"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-25T08:35:54.960"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-05T10:07:40.227"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-05T10:11:19.860"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-25T08:45:05.557"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-05T10:11:20.987"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-05T10:11:19.313"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-05T10:11:18.673"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-25T08:45:05.557"
+  },
+  {
+    "Codigo": "B2231001901",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-25T08:45:05.557"
+  },
+  {
+    "Codigo": "B2231002101",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-04T13:30:15.723"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-04T16:44:55.210"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-05T09:45:37.523"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Aplicar graxa",
+    "Posto": 2,
+    "Sequencia": 9,
+    "Data": "2022-08-05T11:16:12.567"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-05T09:05:44.613"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-05T09:08:33.767"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 11,
+    "Data": "2022-08-05T11:18:16.927"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fim do ciclo",
+    "Posto": 5,
+    "Sequencia": 6,
+    "Data": "2022-08-05T14:58:34.763"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-04T15:57:56.017"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-04T16:44:55.257"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-04T16:25:43.560"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Gerar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 2,
+    "Data": "2022-08-04T16:25:25.657"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-05T09:45:34.710"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-05T09:45:33.690"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-05T09:45:32.563"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar cabos",
+    "Posto": 5,
+    "Sequencia": 4,
+    "Data": "2022-08-05T14:29:21.873"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar cilindro direito",
+    "Posto": 5,
+    "Sequencia": 2,
+    "Data": "2022-08-05T14:29:17.917"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar cilindro esquerdo",
+    "Posto": 5,
+    "Sequencia": 3,
+    "Data": "2022-08-05T14:29:19.243"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Instalar graxeiras",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-05T11:16:02.223"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-04T16:27:16.593"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-04T16:25:25.657"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-05T07:26:36.067"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-05T09:38:13.537"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 5,
+    "Sequencia": 1,
+    "Data": "2022-08-05T14:28:23.960"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-05T09:05:46.240"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-04T16:25:42.937"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar base fixa��o sensores",
+    "Posto": 2,
+    "Sequencia": 8,
+    "Data": "2022-08-05T11:16:09.927"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar buchas",
+    "Posto": 2,
+    "Sequencia": 10,
+    "Data": "2022-08-05T11:18:15.333"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-05T09:05:50.877"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar central lubrifica��o",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-05T11:16:05.337"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-04T16:44:55.210"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar suporte do sensor indutivo",
+    "Posto": 2,
+    "Sequencia": 7,
+    "Data": "2022-08-05T11:16:07.023"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Montar suporte sanfona",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-05T11:16:03.537"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-04T16:25:44.623"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-05T09:45:31.390"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-04T16:25:42.373"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-05T09:45:29.020"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-04T16:25:41.717"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-04T16:44:55.210"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-04T16:44:55.210"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Testar  produto",
+    "Posto": 5,
+    "Sequencia": 5,
+    "Data": "2022-08-05T14:58:32.560"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-05T11:16:00.817"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-05T09:05:47.270"
+  },
+  {
+    "Codigo": "B2231002201",
+    "Descricao": "Validar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 3,
+    "Data": "2022-08-04T16:25:25.657"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-08T18:04:47.003"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-09T13:41:02.860"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-09T13:13:00.857"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Fim de processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-09T13:13:05.793"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-08T17:45:54.147"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-08T18:04:46.427"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-08-09T13:41:04.093"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-08T17:45:52.633"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Gerar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 2,
+    "Data": "2022-08-08T17:43:59.510"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-09T13:41:01.623"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-09T13:41:00.970"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-09T13:40:59.887"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-08T17:55:40.540"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-08T17:43:59.510"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-09T11:11:56.833"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-09T13:37:34.307"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-09T13:13:02.403"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-08T17:45:52.133"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-09T13:13:04.060"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-08T18:04:47.003"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-08T17:45:53.180"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-09T13:40:58.763"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-08T17:45:51.520"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-09T13:40:57.433"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-08T17:45:50.690"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-08T18:04:47.003"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-08T18:04:47.003"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-09T13:13:03.107"
+  },
+  {
+    "Codigo": "B2232002001",
+    "Descricao": "Validar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 3,
+    "Data": "2022-08-08T17:43:59.510"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Abastecer esferas no dispositivo",
+    "Posto": 3,
+    "Sequencia": 4,
+    "Data": "2022-08-08T15:44:05.067"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Acoplar estrutura dianteira e traseira",
+    "Posto": 4,
+    "Sequencia": 7,
+    "Data": "2022-08-15T14:22:39.473"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Aplicar graxa",
+    "Posto": 2,
+    "Sequencia": 9,
+    "Data": "2022-08-15T15:19:55.663"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Cravar parafusos",
+    "Posto": 2,
+    "Sequencia": 2,
+    "Data": "2022-08-15T13:51:14.503"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-08T15:24:12.390"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fim do processo",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-15T14:08:32.760"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fim do processo",
+    "Posto": 2,
+    "Sequencia": 11,
+    "Data": "2022-08-15T15:20:02.367"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fim do processo",
+    "Posto": 3,
+    "Sequencia": 6,
+    "Data": "2022-08-08T15:44:05.263"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fim do processo",
+    "Posto": 4,
+    "Sequencia": 8,
+    "Data": "2022-08-15T14:26:09.973"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-08T15:24:10.777"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Instalar an�is externos",
+    "Posto": 4,
+    "Sequencia": 6,
+    "Data": "2022-08-15T14:22:37.310"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Instalar an�is internos",
+    "Posto": 4,
+    "Sequencia": 5,
+    "Data": "2022-08-15T14:22:35.560"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Instalar buchas ",
+    "Posto": 4,
+    "Sequencia": 4,
+    "Data": "2022-08-15T14:22:34.373"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Instalar graxeiras",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-15T15:19:51.170"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Ler c�digo de rastreabilidade",
+    "Posto": 3,
+    "Sequencia": 1,
+    "Data": "2022-08-08T15:33:55.347"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-08T15:20:17.873"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 2,
+    "Sequencia": 1,
+    "Data": "2022-08-15T13:39:13.113"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Ler etiqueta de rastreabilidade",
+    "Posto": 4,
+    "Sequencia": 1,
+    "Data": "2022-08-15T14:22:02.737"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar anel de veda��o",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-15T14:08:26.033"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-08T15:24:10.073"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar base fixa��o sensores",
+    "Posto": 2,
+    "Sequencia": 8,
+    "Data": "2022-08-15T15:19:54.863"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar buchas",
+    "Posto": 2,
+    "Sequencia": 10,
+    "Data": "2022-08-15T15:19:56.460"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar buj�o",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-15T14:08:29.630"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar central lubrifica��o",
+    "Posto": 2,
+    "Sequencia": 6,
+    "Data": "2022-08-15T15:19:52.770"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar conjunto + anel interno + esferas",
+    "Posto": 3,
+    "Sequencia": 5,
+    "Data": "2022-08-08T15:44:05.067"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar suporte do sensor indutivo",
+    "Posto": 2,
+    "Sequencia": 7,
+    "Data": "2022-08-15T15:19:53.880"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Montar suporte sanfona",
+    "Posto": 2,
+    "Sequencia": 5,
+    "Data": "2022-08-15T15:19:52.190"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-08T15:24:11.400"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Passar vaselina nas buchas",
+    "Posto": 4,
+    "Sequencia": 3,
+    "Data": "2022-08-15T14:22:32.587"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-08T15:24:08.900"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Posicionar estrtura dianteira do dispositivo",
+    "Posto": 4,
+    "Sequencia": 2,
+    "Data": "2022-08-15T14:22:30.820"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-08T15:24:08.353"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Posicionar estrutura dianteira no dispositivo(estrutura + anel)",
+    "Posto": 3,
+    "Sequencia": 3,
+    "Data": "2022-08-08T15:44:05.067"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Posicionar pr�-montagem no dispositivo(estrutura + anel interno)",
+    "Posto": 3,
+    "Sequencia": 2,
+    "Data": "2022-08-08T15:44:05.067"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 3,
+    "Data": "2022-08-15T15:19:50.213"
+  },
+  {
+    "Codigo": "B2232002101",
+    "Descricao": "Torquear porcas",
+    "Posto": 2,
+    "Sequencia": 4,
+    "Data": "2022-08-15T14:08:27.787"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-08T15:24:12.390"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-08T15:24:10.777"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-08T16:32:42.317"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-08T15:24:10.073"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-08T15:24:11.400"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-08T15:24:08.900"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-08T15:24:08.353"
+  },
+  {
+    "Codigo": "B2232002201",
+    "Descricao": "Validar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 3,
+    "Data": "2022-08-08T16:35:44.890"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-08T15:24:12.390"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Fixar plaqueta de rastreabilidade na estrtura dianteira",
+    "Posto": 1,
+    "Sequencia": 7,
+    "Data": "2022-08-08T15:24:10.777"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-08T16:38:36.683"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Montar anel externo na estrtura dianteira pintada",
+    "Posto": 1,
+    "Sequencia": 6,
+    "Data": "2022-08-08T15:24:10.073"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Passar graxa na pista do rolamento",
+    "Posto": 1,
+    "Sequencia": 8,
+    "Data": "2022-08-08T15:24:11.400"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Posicionar anel externo no dispositivo",
+    "Posto": 1,
+    "Sequencia": 5,
+    "Data": "2022-08-08T15:24:08.900"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Posicionar estrutura dianteira do dispositivo",
+    "Posto": 1,
+    "Sequencia": 4,
+    "Data": "2022-08-08T15:24:08.353"
+  },
+  {
+    "Codigo": "B2232002301",
+    "Descricao": "Validar rastreabilidade",
+    "Posto": 1,
+    "Sequencia": 3,
+    "Data": "2022-08-08T16:41:14.507"
+  },
+  {
+    "Codigo": "B2233002101",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-16T08:59:50.193"
+  },
+  {
+    "Codigo": "B2233002101",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-16T08:58:09.137"
+  },
+  {
+    "Codigo": "B2233002201",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-16T09:10:26.177"
+  },
+  {
+    "Codigo": "B2233002201",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-16T09:09:31.473"
+  },
+  {
+    "Codigo": "B2233002301",
+    "Descricao": "Fim do processo",
+    "Posto": 1,
+    "Sequencia": 9,
+    "Data": "2022-08-16T09:13:04.447"
+  },
+  {
+    "Codigo": "B2233002301",
+    "Descricao": "Ler etiqueta de programa��o",
+    "Posto": 1,
+    "Sequencia": 1,
+    "Data": "2022-08-16T09:12:36.137"
+  }
+]

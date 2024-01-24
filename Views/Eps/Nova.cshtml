@@ -1,0 +1,82 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=0.8, user-scalable=no" />
+    <title>Novo</title>
+    <link rel="stylesheet" href="~/css/NovoCadastro.css"/>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="header-container">
+            <div class="header-content">
+                Nova Eps
+            </div>
+            <div class="button-header-container">
+                <input type="button" value="Voltar" class="button-header" onclick="location.href='@Url.Action("Cadastros", "Eps", new { cEps =  ViewBag.ParametroBusca })'" />
+            </div>
+        </div>
+
+        <div class="cadastro-container">
+            <form action="cadastrar" method="post" enctype="multipart/form-data" onsubmit="Submit()">
+
+                <input name="epsPesquisa" value="@ViewBag.ParametroBusca" style="display:none;">
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Eps
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="codigoEps" type="text" class="parametro" autofocus required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Corrente Mínima
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="correnteMinima" type="text" class="parametro" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Corrente Máxima
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="correnteMaxima" type="text" class="parametro" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Tensão Mínima
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="tensaoMinima" type="text" class="parametro" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="row-container">
+                    <div class="row-title-container">
+                        Tensão Máxima
+                    </div>
+                    <div class="row-parametro-container">
+                        <input name="tensaoMaxima" type="text" class="parametro" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="button-salvar-container">
+                    <input type="submit" button class="button-salvar" value="Salvar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

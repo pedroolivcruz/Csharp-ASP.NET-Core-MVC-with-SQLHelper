@@ -1,0 +1,253 @@
+﻿.page-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:0;
+}
+
+.side-bar {
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    left: -250px;
+    background-color: whitesmoke;
+    z-index: 50;
+    position: absolute;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+    .side-bar.enter {
+        opacity: 1;
+        left: 0;
+    }
+
+
+
+.side-bar-header {
+    text-decoration: none;
+    height: 90px;
+    width: 100%;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding-left: 25px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.exit-container {
+    position: absolute;
+    right: 15px;
+    height: 90px;
+    color: white;
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+    .exit:hover {
+        font-weight: 900;
+        color:orange;
+    }
+
+.title-container {
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.title-container-2 {
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.button-container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-content {
+    height: 60px;
+    width: 100%;
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+    .button-content:hover {
+        background-color: rgb(20,20,20);
+        color: white;
+    }
+
+.icon-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:15px;
+    width:30px;
+    height:100%;
+    background-color:transparent;
+}
+
+.button-flecha-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 100%;
+    background-color: transparent;
+    transition-property: transform;
+    transition: 0.5s ease-in-out;
+}
+
+.button-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 145px;
+    margin-left:15px;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+
+.expanded-bar {
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    top: 0px;
+    width: 250px;
+    background-color: rgb(20,20,20);
+    flex-direction: column;
+    z-index: 10;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.expanded-bar.enter{
+    left:250px;
+}
+
+.opacity-container {
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: calc(100vw);
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility:hidden;
+    z-index: 5;
+
+}
+
+.button-expanded-bar {
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: transparent;
+    justify-content:left;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+    .button-expanded-bar:hover {
+        color:orange;
+    }
+
+.button-expand {
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: calc(100vw - 60px);
+    border: none;
+    height: 90px;
+    width: 40px;
+    font-weight:500;
+    background-color: transparent;
+    z-index: 0;
+}
+
+
+.button-expand-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-expand:hover {
+    font-weight: 900;
+    width: 42px;
+    right: calc(100vw - 62px);
+    color: orange;
+}
+
+
+/* RESPOSIVIDADE */
+@media only screen and (max-width:640px) {
+    .expanded-bar {
+        width: 230px;
+        left: -230px;
+    }
+
+    .side-bar {
+        width: 230px;
+        left: -230px;
+    }
+
+    .expanded-bar.enter {
+        left: 230px;
+    }
+
+    .button-text {
+        width: 125px;
+    }
+}
+
